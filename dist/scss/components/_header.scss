@@ -1,0 +1,157 @@
+nav{
+    background-color: $primary;
+    min-height: 70px;
+        padding: 10px;
+        @include respond-to("mediumlarge") {
+            height: 70px;
+        }
+    & .top_header {        
+        height: 100%;
+        @include displayFlex(row,space-between,center,0);
+        & .logo {
+            font-size: $fs8;
+            font-weight: 700;
+            color: $lightGray;
+        }
+        & ul {
+            font-size: $fs4;
+            font-weight: 600;
+            color: $lightGray;
+            display: none;
+            @include respond-from("mediumlarge") {
+                position: fixed;
+                background-color: $primary;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100vh;
+                z-index: 9;
+                @include displayFlex(column,center,center,28px);
+                font-size: $fs6;
+                display: none;               
+            }
+            @include respond-to("mediumlarge") {
+                @include displayFlex(row,center,center,28px);
+            }
+            & li {
+                position: relative;
+                &::after{
+                    content: "";
+                    position: absolute;
+                    height: 2px;
+                    width: 0;
+                    background-color: $lightGray;
+                    bottom: -8px;
+                    left: 0;
+                }
+                &:hover::after {
+                    width: 100%;
+                    
+                    animation: progress 1s;
+                }
+            }
+        }
+        & .process {
+            @include displayFlex(row,center,center,10px);
+            & .circle-outline {
+                @include circle-outline(2px,$lightGray);
+                font-size: $fs4;
+                font-weight: 700;
+                width: 35px;
+                height: 35px;
+                color: $lightGray;
+            }
+            & .menu {
+                @include respond-to("mediumlarge") {
+                    display: none;
+                }
+            }
+            & .exit {
+                display: none;
+                z-index: 999;
+                @include respond-from("mediumlarge"){
+                    position: absolute;
+                    top: 10px;
+                    right: 30px;
+                }               
+            }
+        }
+    }
+    }
+
+
+
+.news-band {
+    height: 52px;
+    background-color: $secondary;
+    .bottom_header {
+        height: 100%;
+        @include displayFlex(row,space-between,center,0);
+        .breaking_News {
+            height: 100%;
+            position: relative;
+            width: 100%;
+            @include respond-to("mediumlarge"){
+                width: 50%;
+            }
+            overflow: hidden;
+            .swiper-wrapper {
+                margin-left: 70px;
+                display: flex;
+                position: relative;
+                z-index: 1;
+                transition-property: transform;
+                box-sizing: content-box;
+                .swiper-slide {
+                    margin-top: 18px;
+                    transform: translateZ(0);
+                    backface-visibility: hidden;
+                    flex-shrink: 0;
+                    color: $lightGray;
+                    font-size: $fs4;
+                    strong {
+                        font-weight: 700;
+                        font-size: $fs4;
+                    }
+                }
+            }
+            .swiper-next,.swiper-prev {
+                height: 100%;
+                width: 26px!important;
+                z-index: 5;
+            }
+            .swiper-prev {
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                color: $lightGray;
+                cursor: pointer;
+                @include displayFlex(row,center,center,0)
+            }
+            .swiper-next {
+                position: absolute;
+                left: 30px;
+                top: 50%;
+                transform: translateY(-50%);
+                color: $lightGray;
+                cursor: pointer;
+                background-color: darken($lightGray,60);
+                @include displayFlex(row,center,center,0)
+            }
+        }
+        .social{
+            @include px(10,10);
+            @include respond-from("mediumlarge") {
+                display: none;
+            }
+            ul{
+                @include displayFlex(row,center,center,8px);
+                li {
+                    color:$lightGray;
+                }
+            }
+        }
+    }
+
+}

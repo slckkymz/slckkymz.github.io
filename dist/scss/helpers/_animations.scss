@@ -1,0 +1,46 @@
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+
+@-webkit-keyframes fadeOut {
+  from { opacity: 1; }
+    to { opacity: 0; }
+}
+@keyframes fadeOut {
+  from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+
+@-webkit-keyframes progress {
+  from { width: 0%; }
+    to { width: 100%; }
+}
+@keyframes progress {
+  from { width: 0%; }
+    to { width: 100%; }
+}
+
+@keyframes blinker {  
+  50% { opacity: 0; }
+  }
+
+.fadeIn{
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+.fadeOut{
+  -webkit-animation: fadeOut 1s;
+  animation: fadeOut 1s;
+}
+
+.blinker{
+  -webkit-animation: blinker 3s linear infinite;
+  animation: blinker 3s linear infinite;
+}

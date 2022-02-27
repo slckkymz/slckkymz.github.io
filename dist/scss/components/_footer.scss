@@ -1,0 +1,78 @@
+footer {
+    .top_footer {
+        background-color: $primary;
+        height: 100%;
+        @include respond-from("medium"){
+             @include py(10,10);
+        }
+        @include respond-to("medium"){
+            height: 90px;
+        }
+        width: 100%;
+        .content {
+            height: 100%;
+            @include displayFlex(row,space-around,center,10px);
+            h2 {
+                font-size: $fs8;
+                font-weight: 700;
+                color: $lightGray;
+                @include respond-from("medium"){
+                   font-size: $fs6;
+               }
+            }
+            p {
+                color: $lightGray;
+                font-size: $fs5;
+                font-weight: 600;
+                @include respond-from("medium"){
+                    font-size: $fs4;
+                }
+            }
+            .mail_push {
+                position: relative;
+                input {
+                    background-color: rgba(255,255,255,.1);
+                    border: 1px solid $lightGray;
+                    border-radius: 15px;
+                    height: 38px;
+                    width: 100%;
+                    @include px(10,40);
+                    color: white;
+                    font-weight: 500;
+                    &::placeholder {
+                        color: white;
+                    }
+                }
+                button{
+                    position: absolute;
+                    right: 7px;
+                    top: 5px;
+                    background-color: $lightGray;
+                    width: 28px;
+                    height: 28px;
+                    border-radius: 100%;
+                    color: $primary;
+                    cursor: pointer;
+                }   
+            }
+        }
+    }
+    .bottom_footer {
+        background-color: $darkGray;
+        @include py(10,10);
+        .content {
+            ul {
+                margin-bottom: 10px;
+                @include displayFlex(row,flex-start,center,20px);
+                li {
+                    font-size: $fs5;
+                    font-weight: 700;
+                    color: $lightGray;
+                }
+            }
+            span {
+                color: $lightGray;
+            }
+        }
+    }
+}

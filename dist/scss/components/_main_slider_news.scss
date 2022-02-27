@@ -1,0 +1,160 @@
+.main_slider_news {
+    @include my(10,10);
+    width: 100%;
+    max-width: 100%;
+    height: 300px;
+    @include respond-to("medium"){
+        height: 523px;
+    }
+    overflow: hidden;
+    .main_slider_news_content {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        .swiper-wrapper {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            display: flex;
+            transition-property: transform;
+            box-sizing: content-box;
+            .swiper-slide {
+                flex-shrink: 0;
+                width: 100%;
+                height: 100%;
+                position: relative;
+                transition-property: transform;
+                .item {
+                    width: 100%;
+                    height: 100%;
+                    overflow: hidden;
+                    position: relative;
+                    &::before {
+                        content: "";
+                            position: absolute;
+                            width: 100%;
+                            height: 100%;
+                            background: linear-gradient(0deg, $primary 0%, rgba(0, 212, 255, 0) 40%);
+                            top: 0;
+                            left: 0;
+                    }
+                    .details {
+                        position: absolute;
+                        top: 0;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        height: 80%;
+                        width: 100%;
+                        max-width: 750px;
+                        @include py(20,0);
+                        @include displayFlex(column,end,center,5px);
+                        @include respond-from("medium"){
+                            @include px(5,5);
+                            align-items: flex-start;
+                        }
+                        a {
+                            &.news_category {
+                                @extend .btn;
+                                background-color: $lightGray;
+                                color: $primary;
+                                font-weight: 700;
+                                @include px(30,30);
+                                align-self: flex-start;
+                                @include respond-from("mediumlarge"){
+                                    font-size: $fs3;
+                                }
+                            }                            
+                            &.lastminute{
+                                @extend .blinker;
+                            }
+                        }
+                        .c_items {
+                            @include respond-to("medium"){
+                                @include displayFlex(column,center,center,10px);
+                            }
+                            h1 {
+                                background: linear-gradient(86deg, $primary 0%, $primary 50%, rgba(0,212,255,0) 100%);
+                                font-size: $fs5;
+                                font-weight: 700;
+                                color:$lightGray;
+                                @include px(12,12);
+                                @include py(15,15);
+                                text-shadow: 1px 1px 4px $darkGray;
+                                @include respond-to("medium"){
+                                    font-size: $fs8;
+                                }
+                                @include respond-from("small"){
+                                    font-size: $fs4;
+                                }
+                            }
+                            p {
+                                color: $lightGray;
+                                font-size:$fs4;
+                                line-height: 1.3;
+                                text-shadow: 1px 1px 4px $darkGray;
+                                @include satirsinirlama(2);
+                                @include respond-to("medium"){
+                                    font-size: $fs5;
+                                }
+                            }
+                        }
+                    }
+                    .image {
+                        width: 100%;
+                        height: 100%;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                }
+            }
+        }
+        .swiper-pagination {
+            position: absolute;
+            width: 100%;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 5;
+            @include displayFlex(row,center,center,10px);
+            @include respond-from("medium"){
+                width: 100%;
+            }
+            .swiper-pagination-bullet {
+                width: 28px;
+                height: 28px;
+                background-color: $lightGray;
+                text-align: center;
+                line-height: 1.6;
+                font-size: $fs4;
+                font-weight: 700;
+                color: $lightGray;
+                opacity: 1;                
+                border-radius: 100%;
+                border:1px solid $lightGray;
+                background-color: rgba(255,255,255,.1);
+                @include respond-to("small"){
+                    width: 35px;
+                height: 35px;
+                line-height: 2;
+                font-size: $fs4;
+                }
+                @include respond-to("medium"){
+                    width: 42px;
+                height: 42px;
+                line-height: 2;
+                font-size: $fs5;
+                }
+                
+            cursor: pointer;
+            }
+            .swiper-pagination-bullet-active {
+                
+                background-color: rgba(0,0,0,.4);
+              }
+        }
+    }
+}
