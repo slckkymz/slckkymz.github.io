@@ -1,0 +1,6 @@
+figure.video {
+  width: 100%;
+}
+figure.video iframe {
+  width: 100% !important;
+}

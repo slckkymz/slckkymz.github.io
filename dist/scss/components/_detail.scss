@@ -79,6 +79,7 @@
     .news_desc {
         p {
             font-size: $fss3;
+            line-height: 1.2;
             @include my(0, 10);
         }
         h1 {

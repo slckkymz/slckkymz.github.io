@@ -136,6 +136,15 @@ h6 {
   font-weight: 700;
 }
 
+strong {
+  font-weight: 700;
+}
+
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 @-webkit-keyframes fadeIn {
   from {
     opacity: 0;
@@ -2853,6 +2862,7 @@ nav .top_header .process .exit {
 }
 .details_news .news_desc p {
   font-size: 1.13rem;
+  line-height: 1.2;
   margin-top: 0px;
   margin-bottom: 10px;
 }
@@ -2917,6 +2927,164 @@ nav .top_header .process .exit {
 .details_news .keywords ul li:hover {
   background-color: #222222;
   color: white;
+}
+
+.search_detail {
+  background-color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 10px;
+}
+.search_detail p {
+  font-size: 0.8rem;
+}
+@media (min-width: 375px) {
+  .search_detail p {
+    font-size: 1.25rem;
+  }
+}
+.search_detail p strong {
+  font-size: 1.25rem;
+}
+@media (min-width: 375px) {
+  .search_detail p strong {
+    font-size: 1.953rem;
+  }
+}
+.search_detail span {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+@media (min-width: 375px) {
+  .search_detail span {
+    font-size: 1rem;
+  }
+}
+
+figure.video {
+  width: 100%;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+figure.video iframe {
+  width: 100% !important;
+}
+
+figure.image_gallery {
+  width: 100%;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+@media (min-width: 575px) {
+  figure.image_gallery {
+    height: 450px;
+    max-height: 450px;
+  }
+}
+figure.image_gallery a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 0;
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 575px) {
+  figure.image_gallery a img {
+    width: 100%;
+    max-height: 100%;
+  }
+}
+@media (min-width: 575px) {
+  figure.image_gallery a img {
+    height: 100%;
+    max-width: 100%;
+  }
+}
+
+.pagination {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 10px;
+}
+.pagination .dot {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  background-color: #C90914;
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 0;
+}
+.pagination .dot.active {
+  background-color: #222222;
+}
+.pagination .dot:hover {
+  background-color: #222222;
 }
 
 footer .top_footer {
