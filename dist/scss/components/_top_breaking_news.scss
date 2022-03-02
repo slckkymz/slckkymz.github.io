@@ -65,14 +65,12 @@
                         @include respond-from("xsmall"){
                             @include px(10,10);  
                         }
-                        a {
-                            &.news_category {
+                        .news_category {
                                 @extend .btn;
                                 background-color: $lightGray;
                                 color: $primary;
                                 font-weight: 700;
                                 @include px(30,30);
-                            }                            
                             &.lastminute{
                                 @extend .blinker;
                             }
