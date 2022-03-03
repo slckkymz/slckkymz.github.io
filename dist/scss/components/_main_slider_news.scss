@@ -41,10 +41,9 @@
                     }
                     .details {
                         position: absolute;
-                        top: 0;
+                        bottom: 75px;
                         left: 50%;
                         transform: translateX(-50%);
-                        height: 80%;
                         width: 100%;
                         max-width: 750px;
                         @include py(20,0);

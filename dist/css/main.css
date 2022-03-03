@@ -2052,11 +2052,10 @@ nav .top_header .process .exit {
 }
 .main_slider_news .main_slider_news_content .swiper-wrapper .swiper-slide .item .details {
   position: absolute;
-  top: 0;
+  bottom: 75px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  height: 80%;
   width: 100%;
   max-width: 750px;
   padding-top: 20px;
