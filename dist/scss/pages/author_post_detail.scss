@@ -1,5 +1,5 @@
 .post_content {
-    background-color: white;
+    background-color: $fourty;
     @include py(20,20);
     @include px(20,20);
     h1 {

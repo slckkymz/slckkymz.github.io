@@ -32,7 +32,7 @@
 .card_list_news {
     ul {
         li {
-            background-color: white;
+            background-color: $fourty;
             @include px(10, 10);
             @include py(10, 10);
             margin-bottom: 5px;
@@ -44,6 +44,7 @@
                     font-weight: 700;
                     font-size: $fs3;
                     width: 60%;
+                    color: $text_color_thirty;
                 }
                 figure {
                     width: 100px;
@@ -66,8 +67,12 @@
                 }
             }
             &:hover {
-                background-color: $darkGray;
-                color: white;
+                background-color: $secondary;
+                a {
+                    h2 {
+                        color: $text_color_fourty;
+                    }
+                }
                 &::before {
                     content: "";
                     position: absolute;
@@ -75,7 +80,7 @@
                     top: 5px;
                     height: 100%;
                     width: 10px;
-                    background-color: $darkGray;
+                    background-color: $secondary;
                     transform: skewY(136deg);
                 }
             }

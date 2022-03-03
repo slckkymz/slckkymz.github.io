@@ -7,7 +7,7 @@
     .items_authors {
         width: 100%;
         background-color: rgba(255, 255, 255, .4);
-        border: 1px solid rgba($darkGray, .4);
+        border: 1px solid rgba($secondary, .4);
         @include px(20, 20);
         @include py(20, 20);
         @include displayFlex(row, flex-start, center, 10px);
@@ -28,6 +28,7 @@
             }
         }
         .details {
+            color: $text_color_thirty;
             @include displayFlex(column, center, flex-start, 8px);
             h5 {
                 font-size: $fs4;
@@ -47,7 +48,7 @@
                 background-color: $primary;
                 @include px(8, 8);
                 @include py(5, 5);
-                color: white;
+                color: $text_color_fourty;
                 @include respond-from("small") {
                     font-size: $fs3;
                 }

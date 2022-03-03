@@ -2,7 +2,7 @@ figure {
     &.image_gallery {
         width: 100%;
         height: auto;
-        background-color: rgba(0, 0, 0, .1);
+        background-color: rgba($secondary, .1);
         @include respond-to("small") {
             height: 450px;
             max-height: 450px;
@@ -35,15 +35,15 @@ figure {
         height: 30px;
         border-radius: 100%;
         background-color: $primary;
-        color: white;
+        color: $text_color_fourty;
         font-size: $fs4;
         font-weight: 700;
         @include displayFlex(row, center, center, 0);
         &.active {
-            background-color: $darkGray;
+            background-color: $secondary;
         }
         &:hover {
-            background-color: $darkGray;
+            background-color: $secondary;
         }
     }
 }

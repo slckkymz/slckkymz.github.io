@@ -35,7 +35,7 @@
                             position: absolute;
                             width: 100%;
                             height: 100%;
-                            background: linear-gradient(0deg, $primary 0%, rgba(0, 212, 255, 0) 40%);
+                            background: linear-gradient(0deg, $primary 0%, rgba($secondary, 0) 40%);
                             top: 0;
                             left: 0;
                     }
@@ -55,8 +55,8 @@
                         }
                         .news_category {
                                 @extend .btn;
-                                background-color: $lightGray;
-                                color: $primary;
+                                background-color: $thirty;
+                                color: $text_color_secondary;
                                 font-weight: 700;
                                 @include px(30,30);
                                 align-self: flex-start;
@@ -73,14 +73,14 @@
                                 @include displayFlex(column,center,center,10px);
                             }
                             h1 {
-                                background: linear-gradient(86deg, $primary 0%, $primary 50%, rgba(0,212,255,0) 100%);
+                                background: linear-gradient(86deg, $primary 0%, $primary 50%, rgba($secondary,0) 100%);
                                 font-size: $fs5;
                                 font-weight: 700;
-                                color:$lightGray;
+                                color:$text_color_primary;
                                 min-width:100%;
                                 @include px(12,12);
                                 @include py(15,15);
-                                text-shadow: 1px 1px 4px $darkGray;
+                                text-shadow: 1px 1px 4px $text_shadow_primary;
                                 @include respond-to("medium"){
                                     font-size: $fs8;
                                 }
@@ -89,10 +89,10 @@
                                 }
                             }
                             p {
-                                color: $lightGray;
+                                color: $text_color_primary;
                                 font-size:$fs4;
                                 line-height: 1.3;
-                                text-shadow: 1px 1px 4px $darkGray;
+                                text-shadow: 1px 1px 4px $text_shadow_primary;
                                 align-self: flex-start;
                                 @include satirsinirlama(2);
                                 @include respond-to("medium"){
@@ -128,16 +128,16 @@
             .swiper-pagination-bullet {
                 width: 28px;
                 height: 28px;
-                background-color: $lightGray;
+                background-color: $thirty;
                 text-align: center;
                 line-height: 1.6;
                 font-size: $fs4;
                 font-weight: 700;
-                color: $lightGray;
+                color: $text_color_primary;
                 opacity: 1;                
                 border-radius: 100%;
-                border:1px solid $lightGray;
-                background-color: rgba(255,255,255,.1);
+                border:1px solid $border_color_primary;
+                background-color: rgba($fourty,.1);
                 @include respond-to("small"){
                     width: 35px;
                 height: 35px;
@@ -155,7 +155,7 @@
             }
             .swiper-pagination-bullet-active {
                 
-                background-color: rgba(0,0,0,.4);
+                background-color: rgba($secondary,.4);
               }
         }
     }

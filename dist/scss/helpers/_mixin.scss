@@ -98,7 +98,7 @@
         width: 100%;
         height: 226px;
         max-width: 295px;
-        background-color: white;
+        background-color: $fourty;
         figure {
             width: 100%;
             height: 70%;
@@ -116,6 +116,7 @@
             @include px(15,15);
             line-height: $lh;
             font-weight: $fw;
+            color: $text_color_thirty;
             @include satirsinirlama(2);
         }
         span {
@@ -126,7 +127,7 @@
             @include px(8,8);
             @include py(5,5);
             font-weight: 700;
-            color: $lightGray;
+            color: $text_color_primary;
         }
     } 
 }
@@ -141,7 +142,7 @@
         @include displayFlex(row,flex-start,center ,5px);
         flex-wrap: nowrap
       };
-      background-color: white;
+      background-color: $fourty;
       figure {
           width: 100%;
           height: 70%;
@@ -162,6 +163,7 @@
           }          
           line-height: $lh;
           font-weight: $fw;
+          color: $text_color_thirty;
           @include satirsinirlama(2);
           @include respond-from("small"){
             @include px(0,15);
@@ -187,7 +189,7 @@
           @include px(8,8);
           @include py(5,5);
           font-weight: 700;
-          color: $lightGray;
+          color: $text_color_primary;
           @include respond-to("small"){
             position: absolute;
             bottom: 55px;

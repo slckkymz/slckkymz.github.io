@@ -1,6 +1,6 @@
 body {
     font-family: 'Source Sans Pro', sans-serif;
-    background-color: $lightGray;
+    background-color: $bg_color;
 }
 
 .btn {
@@ -20,7 +20,7 @@ body {
 .divider {
     width: 100%;
     height: 1px;
-    background-color: $lightGray;
+    background-color: $thirty;
     @include my(0, 10);
 }
 
@@ -31,7 +31,7 @@ body {
     font-size: $fs5;
     text-transform: uppercase;
     font-weight: 700;
-    color: $primary;
+    color: $text_color_secondary;
     gap: 10px;
     justify-content: center;
     align-items: center;
@@ -41,7 +41,7 @@ body {
     div {
         width: 100%;
         height: 6px;
-        background: linear-gradient(86deg, $primary 0%, $darkGray 100%);
+        background: linear-gradient(86deg, $primary 0%, $secondary 100%);
     }
 }
 

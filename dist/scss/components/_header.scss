@@ -11,12 +11,12 @@ nav{
         & .logo {
             font-size: $fs8;
             font-weight: 700;
-            color: $lightGray;
+            color: $text_color_primary;
         }
         & ul {
             font-size: $fs4;
             font-weight: 600;
-            color: $lightGray;
+            color: $text_color_primary;
             display: none;
             @include respond-from("mediumlarge") {
                 position: fixed;
@@ -40,7 +40,7 @@ nav{
                     position: absolute;
                     height: 2px;
                     width: 0;
-                    background-color: $lightGray;
+                    background-color: $thirty;
                     bottom: -8px;
                     left: 0;
                 }
@@ -54,12 +54,12 @@ nav{
         & .process {
             @include displayFlex(row,center,center,10px);
             & .circle-outline {
-                @include circle-outline(2px,$lightGray);
+                @include circle-outline(2px,$border_color_primary);
                 font-size: $fs4;
                 font-weight: 700;
                 width: 35px;
                 height: 35px;
-                color: $lightGray;
+                color: $text_color_primary;
             }
             & .menu {
                 @include respond-to("mediumlarge") {
@@ -107,7 +107,7 @@ nav{
                     transform: translateZ(0);
                     backface-visibility: hidden;
                     flex-shrink: 0;
-                    color: $lightGray;
+                    color: $text_color_primary;
                     font-size: $fs4;
                     strong {
                         font-weight: 700;
@@ -125,7 +125,7 @@ nav{
                 left: 0;
                 top: 50%;
                 transform: translateY(-50%);
-                color: $lightGray;
+                color: $text_color_primary;
                 cursor: pointer;
                 @include displayFlex(row,center,center,0)
             }
@@ -134,9 +134,9 @@ nav{
                 left: 30px;
                 top: 50%;
                 transform: translateY(-50%);
-                color: $lightGray;
+                color: $text_color_primary;
                 cursor: pointer;
-                background-color: darken($lightGray,60);
+                background-color: darken($thirty,60);
                 @include displayFlex(row,center,center,0)
             }
         }
@@ -148,7 +148,7 @@ nav{
             ul{
                 @include displayFlex(row,center,center,8px);
                 li {
-                    color:$lightGray;
+                    color:$text_color_primary;
                 }
             }
         }
