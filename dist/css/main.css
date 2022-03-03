@@ -2084,6 +2084,7 @@ nav .top_header .process .exit {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+    bottom: 64px;
   }
 }
 .main_slider_news .main_slider_news_content .swiper-wrapper .swiper-slide .item .details .news_category {
