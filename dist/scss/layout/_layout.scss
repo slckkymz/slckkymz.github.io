@@ -60,3 +60,23 @@ body {
     }
 }
 
+
+.sticky_header{
+    position: fixed;
+    z-index: 9999999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    -webkit-box-shadow: 0px 15px 13px -3px rgba(0,0,0,0.3); 
+    box-shadow: 0px 15px 13px -3px rgba(0,0,0,0.3);
+    transition: all .1s;
+}
+
+.sticky_wrapper {
+    @include respond-from("medium") {
+        margin-top: 113px!important;
+    }
+    @include respond-to("medium"){
+        margin-top: 132px!important;
+    }
+}

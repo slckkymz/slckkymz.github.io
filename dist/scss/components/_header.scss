@@ -83,6 +83,9 @@ nav{
 
 .news-band {
     height: 52px;
+    @include respond-from("medium"){
+        height: 33px;
+    }
     background-color: $secondary;
     .bottom_header {
         height: 100%;
@@ -96,22 +99,44 @@ nav{
             }
             overflow: hidden;
             .swiper-wrapper {
-                margin-left: 70px;
                 display: flex;
+                flex-direction: column;
                 position: relative;
                 z-index: 1;
                 transition-property: transform;
                 box-sizing: content-box;
+                @include respond-to("small") {
+                    margin-left: 70px;
+                }
                 .swiper-slide {
-                    margin-top: 18px;
                     transform: translateZ(0);
                     backface-visibility: hidden;
-                    flex-shrink: 0;
                     color: $text_color_primary;
-                    font-size: $fs4;
+                    a {
+                        height: 100%;
+                    h5 {
+                        flex-shrink: 0;
+                        font-size: $fs4;
+                        font-weight: 500;
+                        @include respond-from("medium"){
+                            font-size: $fs3;
+                            @include satirsinirlama(1);
+                            height: 100%;
+                            line-height: 2.7;
+                        }
+                        @include respond-from("xsmall"){                            
+                            max-width: 310px;
+                        }
+                    }                    
+                    @include displayFlex(row,flex-start,center,5px);
+                    flex-wrap: nowrap;
                     strong {
                         font-weight: 700;
                         font-size: $fs4;
+                        @include respond-from("medium"){
+                            font-size: $fs3;
+                        }
+                    }
                     }
                 }
             }
@@ -127,7 +152,10 @@ nav{
                 transform: translateY(-50%);
                 color: $text_color_primary;
                 cursor: pointer;
-                @include displayFlex(row,center,center,0)
+                @include displayFlex(row,center,center,0);
+                @include respond-from("small") {
+                    display: none;
+                }
             }
             .swiper-next {
                 position: absolute;
@@ -137,7 +165,10 @@ nav{
                 color: $text_color_primary;
                 cursor: pointer;
                 background-color: darken($thirty,60);
-                @include displayFlex(row,center,center,0)
+                @include displayFlex(row,center,center,0);
+                @include respond-from("small") {
+                    display: none;
+                }
             }
         }
         .social{

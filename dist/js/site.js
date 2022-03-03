@@ -17,8 +17,9 @@ $(".exit").on("click",function(){
 });
 
 var swiper = new Swiper(".breaking_News", {
-    spaceBetween: 30,
-    centeredSlides: true,
+    // spaceBetween: 30,
+    // centeredSlides: true,
+    direction: "vertical",
     loop: true,
     autoplay: {
       delay: 2500,
@@ -68,4 +69,16 @@ var swiper = new Swiper(".breaking_News", {
 
 $('.main_slider_news_content .swiper-pagination-bullet').hover(function() {
   $( this ).trigger( "click" );
+});
+
+
+$(window).scroll(function(){
+  if ($(window).scrollTop() >= 1) {
+      $('header').addClass('sticky_header');
+      $('.wrapper').addClass('sticky_wrapper');
+  }
+  else {
+      $('header').removeClass('sticky_header');
+      $('.wrapper').removeClass('sticky_wrapper');
+  }
 });

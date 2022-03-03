@@ -23,41 +23,6 @@ $fourty : $white;
 $fifty : $gray;
 
 
-// $text_color_primary : var(--text_color_primary);
-// $text_color_secondary : var(--text_color_secondary);
-// $text_color_thirty : var(--text_color_thirty);
-// $text_color_fourty : var(--text_color_fourty);
-
-// $text_shadow_primary: var(--text_shadow_primary);
-
-// $bg_color : var(--bg_color);
-// $border_color_primary : var(--border_color_primary);
-// $border_color_secondary : var(--border_color_secondary);
-
-// $primary: var(--primary);
-// $secondary: var(--secondary);
-// $thirty : var(--thirty);
-// $fourty : var(--fourty);
-// $fifty : var(--fifty);
-
-
-
-:root {
-    --text_color_primary: #{$lightGray};
-    --text_color_secondary : #{$red};
-    --text_color_thirty : #{$darkGray};
-    --text_color_fourty : #{$white};
-    --text_shadow_primary: #{$darkGray};
-    --bg_color : #{$lightGray}; 
-    --border_color_primary : #{$lightGray};
-    --border_color_secondary : #{$darkGray};
-    --primary: #{$red};
-    --secondary: #{$darkGray};
-    --thirty : #{$lightGray};
-    --fourty : #{$white};
-    --fifty : #{$gray};
-}
-
 
 
 $container: 1200px;
