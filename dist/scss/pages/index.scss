@@ -1,6 +1,7 @@
 
 .wrapper {
     @include my(10,10);
+    flex: 1;
     .adsense {
         width: 100%;
         height: auto;

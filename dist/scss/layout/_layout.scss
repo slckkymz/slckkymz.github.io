@@ -1,6 +1,9 @@
 body {
     font-family: 'Source Sans Pro', sans-serif;
     background-color: $bg_color;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .btn {
