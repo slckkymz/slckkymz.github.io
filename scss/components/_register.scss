@@ -1,10 +1,11 @@
 .content_register {
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     background-color: #E0E0E0;
     @include displayFlex(row,center,center,0px);
     @include respond-from("mediumlarge"){
         @include px(20,20);
+        @include py(20,20);
     }
     .form_register {
         position: relative;
