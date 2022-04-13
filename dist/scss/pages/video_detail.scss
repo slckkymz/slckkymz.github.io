@@ -1,9 +1,0 @@
-figure {
-    &.video {
-        width: 100%;
-        @include my(0, 10);
-        iframe {
-            width: 100%!important;
-        }
-    }
-}

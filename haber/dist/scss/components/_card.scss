@@ -1,0 +1,89 @@
+.important_news {
+    @include my(10, 10);
+    @include grid(4, 10, 283px);
+    @include respond-to("mediumlarge") {
+        @include grid(4, 10, 1fr);
+    }
+    @include card(500, 1.2);
+    overflow: auto;
+}
+
+.last_news_content {
+    @include my(10, 10);
+    @include grid(3, 10, 1fr);
+    @include respond-from("xlarge") {
+        @include grid(3, 10, 1fr);
+    }
+    @include respond-from("large") {
+        @include grid(4, 10, 1fr);
+    }
+    @include respond-from("mediumlarge") {
+        @include grid(3, 10, 1fr);
+    }
+    @include respond-from("medium") {
+        @include grid(2, 10, 1fr);
+    }
+    @include respond-from("small") {
+        @include grid(1, 10, 1fr);
+    }
+    @include cardResponsive(700, 1.2);
+}
+
+.card_list_news {
+    ul {
+        li {
+            background-color: $fourty;
+            @include px(10, 10);
+            @include py(10, 10);
+            margin-bottom: 5px;
+            position: relative;
+            a {
+                @include displayFlex(row, space-between, center, 5px);
+                flex-wrap: nowrap;
+                h2 {
+                    font-weight: 700;
+                    font-size: $fs3;
+                    width: 60%;
+                    color: $text_color_thirty;
+                }
+                figure {
+                    width: 100px;
+                    height: 50px;
+                    flex-shrink: 0;
+                    @include respond-from("large") {
+                        width: 100px;
+                    }
+                    @include respond-to("large") {
+                        width: 72px;
+                    }
+                    @include respond-to("xlarge") {
+                        width: 100px;
+                    }
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+            &:hover {
+                background-color: $secondary;
+                a {
+                    h2 {
+                        color: $text_color_fourty;
+                    }
+                }
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: -10px;
+                    top: 5px;
+                    height: 100%;
+                    width: 10px;
+                    background-color: $secondary;
+                    transform: skewY(136deg);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,78 @@
+footer {
+    .top_footer {
+        background-color: $primary;
+        height: 100%;
+        @include respond-from("medium"){
+             @include py(10,10);
+        }
+        @include respond-to("medium"){
+            height: 90px;
+        }
+        width: 100%;
+        .content {
+            height: 100%;
+            @include displayFlex(row,space-around,center,10px);
+            h2 {
+                font-size: $fs8;
+                font-weight: 700;
+                color: $text_color_primary;
+                @include respond-from("medium"){
+                   font-size: $fs6;
+               }
+            }
+            p {
+                color: $text_color_primary;
+                font-size: $fs5;
+                font-weight: 600;
+                @include respond-from("medium"){
+                    font-size: $fs4;
+                }
+            }
+            .mail_push {
+                position: relative;
+                input {
+                    background-color: rgba(255,255,255,.1);
+                    border: 1px solid $border_color_primary;
+                    border-radius: 15px;
+                    height: 38px;
+                    width: 100%;
+                    @include px(10,40);
+                    color: $text_color_fourty;
+                    font-weight: 500;
+                    &::placeholder {
+                        color: $text_color_fourty;
+                    }
+                }
+                button{
+                    position: absolute;
+                    right: 7px;
+                    top: 5px;
+                    background-color: $thirty;
+                    width: 28px;
+                    height: 28px;
+                    border-radius: 100%;
+                    color: $text_color_secondary;
+                    cursor: pointer;
+                }   
+            }
+        }
+    }
+    .bottom_footer {
+        background-color: $secondary;
+        @include py(10,10);
+        .content {
+            ul {
+                margin-bottom: 10px;
+                @include displayFlex(row,flex-start,center,20px);
+                li {
+                    font-size: $fs5;
+                    font-weight: 700;
+                    color: $text_color_primary;
+                }
+            }
+            span {
+                color: $text_color_primary;
+            }
+        }
+    }
+}
