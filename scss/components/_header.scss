@@ -7,12 +7,31 @@ header {
     position: relative;
     .header_top {
         padding-top: 60px;
+        @include respond-from("mediumlarge"){
+            @include px(20,20);
+        }
         @include respond-from("small"){
             padding-top: 20px;
         }
         @include displayFlex(row,space-between,center,10px);
         .menu {
-            @include displayFlex(row,center,center,10px);
+            @include respond-from("mediumlarge"){
+                height: 100vh;
+                width: 0%;
+                opacity: 0;
+                background-color: $primary;
+                position: fixed;
+                top: 0;
+                left: 0;
+                z-index: 9999;
+                transition: all .5s ease-in-out;
+                &.active {
+                    width: 80%;
+                    opacity: 1;
+                }
+            }
+            
+            @include displayFlex(row,center,center,10px);           
             .logo {
                 width: 250px;
                 height: 100%;
@@ -22,6 +41,7 @@ header {
                 }
             }
             ul {
+               
                 background-color: $thirty;
                 font-size: 12px;
                 font-weight: 700;
@@ -29,6 +49,11 @@ header {
                 @include border-radius-all(30px);
                 @include px(40,40);
                 @include py(20,20);
+                @include respond-from("mediumlarge"){
+                    background-color: transparent;
+                    flex-direction: column;
+                    width: 100%;
+                }
                 li {
                     position: relative;
                     transition: all .5s ease-in-out;          
@@ -36,15 +61,14 @@ header {
                     &:hover {
                         color: $secondary;
                     }
+                    @include respond-from("mediumlarge"){
+                        color: $text_color_primary;
+                        font-size: 15px;
+                    }
                 }
-                @include respond-from("mediumlarge"){
-                    display: none;
-                }
+              
             }
             a{
-                @include respond-from("mediumlarge"){
-                    display: none;
-                }
                 &.register {
                     font-size: 12px;
                     background-color: $primary;
@@ -54,6 +78,9 @@ header {
                     @include py(20,20);
                     transition: all .5s ease-in-out;
                     &:hover {
+                        background-color: $secondary;
+                    }
+                    @include respond-from("mediumlarge"){
                         background-color: $secondary;
                     }
                 }
@@ -72,6 +99,40 @@ header {
                 }
             }
         }
+        .menu_open{
+            display: none;
+            &.active{
+                display: block;
+            }
+            @include respond-from("mediumlarge"){
+                display: block;
+                &.deactive {
+                    display: none;
+                }
+            }
+                i {
+                font-size: 25px;
+                }
+        }
+        .menu_close{
+            display: none;
+            position: fixed;
+            top: 37px;
+            right: 33px;
+            z-index: 999;
+            &.active{
+                display: block;
+            }
+            @include respond-from("mediumlarge"){
+                display: block;
+                &.deactive {
+                    display: none;
+                }
+            }
+                i {
+                font-size: 25px;
+                }
+        }
     }
     .header_slider {
         width: 100%;
@@ -82,7 +143,6 @@ header {
         @include respond-to("large"){
             height: 550px;
         }
-        
         margin-top: 50px;
         @include px(150,30);
         @include respond-from("large"){

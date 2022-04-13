@@ -27,15 +27,17 @@
                 <a href="#content_avantage"> AVANTAJLAR </a>
               </li>
               <li>
-                <a href="content_corporate"> KURUMSAL </a>
+                <a href="#content_corporate"> KURUMSAL </a>
               </li>
               <li>
-                <a href=""> İLETİŞİM </a>
+                <a href="#content_contact"> İLETİŞİM </a>
               </li>
             </ul>
-            <a href="" class="btn_empty register">ÜYE OL</a>
+            <a href="/register.html" class="btn_empty register">ÜYE OL</a>
             <a href="" class="btn_empty sign_in">GİRİŞ YAP</a>
           </div>
+          <a class="menu_open"><i class="fas fa-bars"></i></a>
+          <a class="menu_close deactive"><i class="fas fa-xmark"></i></a>
         </div>
       </div>
       <div class="swiper header_slider">
@@ -96,29 +98,29 @@
     <div class="content_info" id="content_info">
       <div class="ball ball-1"></div>
       <div class="ball ball-2"></div>
-      <div class="container">
-        <div class="information">
-          <div class="container">
-            <div class="list">
-              <div class="item">
-                <span class="countfect" data-num="4132"></span>
-                <p>SATICI ECZANE</p>
-              </div>
-              <div class="item">
-                <span class="countfect" data-num="1342"></span>
-                <p>ALICI ECZANE</p>
-              </div>
-              <div class="item">
-                <span class="countfect" data-num="4341"></span>
-                <p>ÜRÜN STOĞU</p>
-              </div>
-              <div class="item">
-                <span class="countfect" data-num="141"></span>
-                <p>ORTALAMA GÜNLÜK SATIŞ</p>
-              </div>
+      <div class="information">
+        <div class="container">
+          <div class="list">
+            <div class="item">
+              <span class="countfect" data-num="4132"></span>
+              <p>SATICI ECZANE</p>
+            </div>
+            <div class="item">
+              <span class="countfect" data-num="1342"></span>
+              <p>ALICI ECZANE</p>
+            </div>
+            <div class="item">
+              <span class="countfect" data-num="4341"></span>
+              <p>ÜRÜN STOĞU</p>
+            </div>
+            <div class="item">
+              <span class="countfect" data-num="141"></span>
+              <p>ORTALAMA GÜNLÜK SATIŞ</p>
             </div>
           </div>
         </div>
+      </div>
+      <div class="container">
         <div class="how_register">
           <div class="number_of_page">
             <span>01</span>
@@ -342,7 +344,7 @@
         </div>
       </div>
     </div>
-    <div class="content_contact" id="content_contant">
+    <div class="content_contact" id="content_contact">
       <div class="ball ball-10"></div>
       <div class="ball ball-11"></div>
 
@@ -498,6 +500,7 @@
     <script>
       var swiper = new Swiper(".header_slider", {
         direction: "vertical",
+        allowTouchMove: true,
         autoplay: {
           delay: 5000,
           disableOnInteraction: false,
@@ -550,5 +553,17 @@
       });
     </script>
     <script src="/js/countfect.min.js"></script>
+    <script>
+      $(".menu_open").click(function () {
+        $(".menu").addClass("active");
+        $(".menu_open").addClass("deactive");
+        $(".menu_close").removeClass("deactive");
+      });
+      $(".menu_close").click(function () {
+        $(".menu").removeClass("active");
+        $(".menu_open").removeClass("deactive");
+        $(".menu_close").addClass("deactive");
+      });
+    </script>
   </body>
 </html>

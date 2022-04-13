@@ -10,6 +10,10 @@
     margin:0 auto;
     position: relative;
     @include respond-from("xxlarge"){
+        padding: 0 30px;
+        width: 100%;
+    }
+    @include respond-from("xlarge"){
         padding: 0 10px;
         width: 100%;
     }
@@ -99,8 +103,8 @@
     left: 2%;
 }
 .ball-5 {
-    width: 221px;
-    height: 221px;
+    width: 180px;
+    height: 180px;
     top: 70%;
     left: 40%;
 }
