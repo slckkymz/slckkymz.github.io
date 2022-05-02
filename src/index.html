@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/src/assets/css/style.css" />
+    <title>Novadan HomePage</title>
+  </head>
+  
+  <body class="bg-background flex flex-col min-h-screen justify-between scrollbar">
+    <div class="container md:pt-3">
+      <header class="w-responsive grid md:grid-cols-2 lg:grid-cols-[220px_1fr_290px]  gap-3 items-center md:items-end justify-between bg-white shadow-md shadow-primary rounded-br-[30px] rounded-bl-[30px] md:rounded-[30px] px-6 py-6">
+        <div class="">
+          <a href="/">
+            <img src="/src/assets/images/Logo.png" alt="logo" />
+          </a>
+        </div>
+        <div class="md:hidden grid justify-end">
+          <button id="menu_visible"><i class="fas fa-bars text-3xl"></i></button>
+          <button id="menu_invisible" class="hidden"><i class="fas fa-xmark text-3xl"></i></button>
+        </div>
+        <div class="col-span-2 lg:col-span-1 md:order-last lg:order-none border-t lg:border-0 border-t-primary mt-5 pt-5 lg:mt-0 lg:pt-0 flex flex-col h-full justify-between items-end flex-wrap w-full gap-y-2">
+          <ul class="hidden lg:flex gap-4 text-fourth w-full justify-center items-center h-10">
+            <li class="text-sm relative after:h-3/4 after:w-[1px] after:rounded-md after:absolute after:-right-[10px] after:top-[2px] after:bg-fourth"><a href="">NOVACENT</a></li>
+            <li class="text-sm font-bold relative after:h-3/4 after:w-[1px] after:rounded-md after:absolute after:-right-[10px] after:top-[2px] after:bg-fourth"><a href="">ÇOKLU ARAMA</a></li>
+            <li class="text-sm relative after:h-3/4 after:w-[1px] after:rounded-md after:absolute after:-right-[10px] after:top-[2px] after:bg-fourth"><a href="">KAMPANYALAR</a></li>
+            <li class="text-sm"><a href="">İLETİŞİM</a></li>
+          </ul>
+            <form action="" tabindex="0" class="relative w-full group">
+              <i class="fas fa-search absolute top-1/2 -translate-y-1/2 left-7 font-bold"></i>
+              <input type="text" class="peer outline-none border-0 rounded-[30px] bg-primary w-full h-14 pl-16 focus:ring-0 focus:border-0" placeholder="Bioxcin Şampuan Forte Tüm Saçlara 300ml">
+              <button class="absolute h-full rounded-[30px]  px-7 bg-tenth right-0 top-0 flex justify-center items-center"><span class="mr-3 text-sm font-bold text-white">ÇOKLU ARA</span> <img src="/src/assets/images/search_button.png"></img></button>
+              <section class="hidden group-focus-within:absolute group-focus-within:block md:bg-white mt-8 shadow-2xl pb-28 md:pb-0 rounded-[30px] z-30">
+                <div class="md:grid md:grid-cols-2 md:gap-3">
+                 <div class="bg-white rounded-[30px] mt-10px  py-5 order-2"> 
+                   <div class="flex justify-between items-center px-7 mb-10px">
+                     <h3 class="text-lg text-fifth font-bold">ÜRÜNLER</h3>
+                     <button type="button" onclick="this.blur()" class="w-9 h-9 flex justify-center items-center rounded-full bg-primary"><i class="fas fa-xmark"></i></button>
+                   </div>
+                   <div class="w-full h-[97px] rounded-[30px]  shadow-lg shadow-primary hover:bg-primary mb-10px">
+                     <a href="#" class="flex gap-4 px-7 py-4 w-full h-full">
+                       <figure class="shrink-0 w-16 h-16 rounded-[20px] border-[0.2px] border-fifth border-opacity-20">
+                         <img class="rounded-[20px]" src="/src/assets/images/1003437_1_small.png" alt="">
+                       </figure>
+                       <div class="flex flex-col items-start justify-between">
+                         <h2 class="text-sm font-medium text-fifth line-clamp-1">Deotak Insivible Roll-On Women 35 ml</h2>
+                         <p class="text-sm font-normal text-tenth line-clamp-1">124,00₺'den başlayan ilanları incele</p>
+                         <span class="text-xs font-normal text-fourth">43 İLAN BULUNDU.</span>
+                       </div>
+                     </a>
+                   </div>
+                   <div class="w-full h-[97px] rounded-[30px] shadow-lg shadow-primary hover:bg-primary mb-10px">
+                     <a href="#" class="flex gap-4 w-full h-full px-7 py-4 ">
+                       <figure class="shrink-0 w-16 h-16 rounded-[20px] border-[0.2px] border-fifth border-opacity-20">
+                         <img class="rounded-[20px] " src="/src/assets/images/1003437_1_small.png" alt="">
+                       </figure>
+                       <div class="flex flex-col items-start justify-between">
+                         <h2 class="text-sm font-medium text-fifth line-clamp-1">Deotak Insivible Roll-On Women 35 ml</h2>
+                         <p class="text-sm font-normal text-tenth line-clamp-1">124,00₺'den başlayan ilanları incele</p>
+                         <span class="text-xs font-normal text-fourth">43 İLAN BULUNDU.</span>
+                       </div>
+                     </a>
+                   </div>
+                   <div class="w-full h-[97px] rounded-[30px] shadow-lg shadow-primary hover:bg-primary mb-10px">
+                     <a href="#" class="flex gap-4 px-7 py-4 w-full h-full">
+                       <figure class="shrink-0 w-16 h-16 rounded-[20px] border-[0.2px] border-fifth border-opacity-20">
+                         <img class="rounded-[20px] " src="/src/assets/images/1003437_1_small.png" alt="">
+                       </figure>
+                       <div class="flex flex-col items-start justify-between">
+                         <h2 class="text-sm font-medium text-fifth line-clamp-1">Deotak Insivible Roll-On Women 35 ml</h2>
+                         <p class="text-sm font-normal text-tenth line-clamp-1">124,00₺'den başlayan ilanları incele</p>
+                         <span class="text-xs font-normal text-fourth">43 İLAN BULUNDU.</span>
+                       </div>
+                     </a>
+                   </div>
+                   <div class="w-full h-[97px] rounded-[30px] shadow-lg shadow-primary hover:bg-primary mb-10px">
+                     <a href="#" class="flex gap-4 px-7 py-4 w-full h-full">
+                       <figure class="shrink-0 w-16 h-16 rounded-[20px] border-[0.2px] border-fifth border-opacity-20">
+                         <img class="rounded-[20px] " src="/src/assets/images/1003437_1_small.png" alt="">
+                       </figure>
+                       <div class="flex flex-col items-start justify-between">
+                         <h2 class="text-sm font-medium text-fifth line-clamp-1">Deotak Insivible Roll-On Women 35 ml</h2>
+                         <p class="text-sm font-normal text-tenth line-clamp-1">124,00₺'den başlayan ilanları incele</p>
+                         <span class="text-xs font-normal text-fourth">43 İLAN BULUNDU.</span>
+                       </div>
+                     </a>
+                   </div>
+                 </div>
+                 <div class="order-1">
+                   <div class="bg-white rounded-[30px] mt-10px py-5 px-7">
+                     <div class="flex justify-between items-center mb-6">
+                       <h3 class="text-lg text-fifth font-bold">MARKALAR</h3>
+                     </div>
+                     <ul class="flex flex-col gap-2">
+                       <li>
+                         <input type="checkbox" class="search_check" id="marka_1">
+                         <label for="marka_1" class="text-base font-medium text-tenth mr-2">L'OREAL</label>
+                         <span class="text-third text-xs">1</span>
+                       </li>
+                     </ul>
+                   </div>
+                   <div class="bg-white rounded-[30px] mt-10px py-5 px-7">
+                     <div class="flex justify-between items-center mb-6">
+                       <h3 class="text-lg text-fifth font-bold">SATICILAR</h3>
+                     </div>
+                     <ul class="flex flex-col gap-2">
+                       <li>
+                         <input type="checkbox" class="search_check" id="satici_1">
+                         <label for="satici_1" class="text-base font-medium text-tenth mr-2">Poyraz Eczanesi</label>
+                       </li>
+                     </ul>
+                   </div>
+                 </div>
+                </div>
+                <a href="" class="mt-10px w-full text-xs text-fifth text-center bg-white rounded-[30px] flex justify-center items-center h-[50px]">ÜRÜNLERDE GELİŞMİŞ ARAMA >></a>
+               </section>
+            </form>
+        </div>
+        <div class="lg:col-span-1 md:flex md:flex-col grid-rows-2 justify-center items-end gap-7">
+          <ul class="hidden md:flex bottom-0 left-0 md:relative bg-white w-full justify-around items-center md:justify-end md:items-center md:gap-3">
+            <li class="group transition-all duration-700 ease-in-out rounded-full w-10 h-10 bg-[#F05A29] text-white flex justify-center items-center shrink-0 relative hover:w-auto hover:max-w-[120px] hover:px-5 hover:flex-nowrap">
+              <a href="" class="w-full h-full flex group-hover:gap-2 justify-center items-center">
+                <i class="fas fa-user"></i>
+                <span class="hidden group-hover:flex">Profilim</span>
+              </a>
+            </li>
+            <li class="group transition-all duration-700 ease-in-out rounded-full w-10 h-10 bg-[#6149CD] text-white flex justify-center items-center shrink-0 relative hover:w-auto hover:px-5 hover:flex-nowrap">
+              <a href="" class="w-full h-full flex group-hover:gap-2 justify-center items-center">
+                <i class="fas fa-fire-flame-curved"></i>
+                <span class="hidden group-hover:flex">Novacent</span>
+              </a>
+            </li>
+            <li class="md:hidden transition-all rounded-full w-20 h-20 -translate-y-4 bg-seventh text-white flex justify-center items-center shrink-0 relative">
+              <a href="" class="w-full h-full flex justify-center items-center">
+                <i class="fas fa-bag-shopping text-4xl"></i>
+                <span class="absolute right-0 top-0 text-sm bg-tenth rounded-full w-6 h-6 text-center flex justify-center items-center">8</span>
+              </a>
+            </li>
+            <li class="group transition-all duration-700 ease-in-out rounded-full w-10 h-10 bg-[#F30183] text-white flex justify-center items-center shrink-0 relative hover:w-auto hover:px-5 hover:flex-nowrap">
+              <a href="" class="w-full h-full flex group-hover:gap-2 justify-center items-center">
+                <i class="fas fa-heart"></i>
+                <span class="hidden group-hover:flex">Favoriler</span>
+              </a>
+            </li>
+            <li class="group transition-all duration-700 ease-in-out rounded-full w-10 h-10 bg-[#0057FC] text-white flex justify-center items-center shrink-0 relative hover:w-auto hover:px-5 hover:flex-nowrap">
+              <a href="" class=" w-full h-full flex group-hover:gap-2 justify-center items-center">
+                <i class="fas fa-bell"></i>
+                <span class="top-0 -right-1 absolute bg-fifth w-5 h-5 text-xs text-center rounded-full flex justify-center items-center">2</span>
+                <span class="hidden group-hover:flex">Bildirimler</span>
+              </a>
+            </li>
+          </ul>
+          <div class="hidden md:inline-flex gap-2 shrink-0">
+            <a class="bg-[#202155] text-white text-sm font-bold px-6 py-4 rounded-full flex justify-center items-center gap-x-3" href="">İLAN EKLE<i class="fas fa-square-plus"></i></a>
+            <a class="bg-seventh text-white text-sm font-bold px-6 py-4  rounded-full flex justify-center items-center gap-x-3 relative" href="">SEPETİM <i class="fas fa-bag-shopping"></i><span class="absolute right-0 top-0 text-xs bg-tenth rounded-full w-5 h-5 text-center flex justify-center items-center">8</span></a>
+          </div>
+        </div>      
+      </header>     
+      <section id="nav_menu" class=" transition-all ease-in-out duration-700 w-responsive h-[60px] bg-white rounded-[30px] mt-10px px-14 flex justify-between items-center text-base relative">
+        <nav class="overflow-x-auto overflow-y-hidden cursor-grab snap-normal	 scroll-smooth snap-x flex h-[60px] leading-[60px] items-center justify-between gap-10 lg:gap-14 xl:gap-10 mb-0 w-full scrollbar">
+          <div tabindex="" class="group snap-start">
+            <a class="font-bold whitespace-nowrap flex" href=""><figure class="mr-10px shrink-0 flex justify-center items-center"><img src="/src/assets/images/besindestek.png" alt=""></figure>BESİN DESTEK</a>
+            <div class="absolute z-50 translate-y-full w-full bg-fifth rounded-[30px] bottom-4 left-0 hidden group-hover:grid grid-cols-5 xl:grid-cols-3 p-3">
+              <div class="col-span-3 xl:col-span-2 w-full h-full items-center justify-center">
+                <div class=" flex flex-wrap xl:max-w-[694px] gap-3 h-full mx-auto place-content-center">
+                  <a href="" class="flex justify-center items-center flex-col gap-5">
+                    <figure class="w-[75px] h-[75px] rounded-[20px] overflow-hidden">
+                      <img src="/src/assets/images/shutterstock_1048382176.png" alt="">
+                    </figure>
+                    <span class="text-white font-bold whitespace-nowrap text-base">Sigarayı Bırakma</span>
+                  </a>
+                  <a href="" class="flex justify-center items-center flex-col gap-5">
+                    <figure class="w-[75px] h-[75px] rounded-[20px] overflow-hidden">
+                      <img src="/src/assets/images/shutterstock_1048382176.png" alt="">
+                    </figure>
+                    <span class="text-white font-bold whitespace-nowrap">Sigarayı Bırakma</span>
+                  </a>
+                  <a href="" class="flex justify-center items-center flex-col gap-5">
+                    <figure class="w-[75px] h-[75px] rounded-[20px] overflow-hidden">
+                      <img src="/src/assets/images/shutterstock_1048382176.png" alt="">
+                    </figure>
+                    <span class="text-white font-bold whitespace-nowrap">Sigarayı Bırakma</span>
+                  </a>
+                  <a href="" class="flex justify-center items-center flex-col gap-5">
+                    <figure class="w-[75px] h-[75px] rounded-[20px] overflow-hidden">
+                      <img src="/src/assets/images/shutterstock_1048382176.png" alt="">
+                    </figure>
+                    <span class="text-white font-bold whitespace-nowrap">Sigarayı Bırakma</span>
+                  </a>
+                  <a href="" class="flex justify-center items-center flex-col gap-5">
+                    <figure class="w-[75px] h-[75px] rounded-[20px] overflow-hidden">
+                      <img src="/src/assets/images/shutterstock_1048382176.png" alt="">
+                    </figure>
+                    <span class="text-white font-bold whitespace-nowrap">Sigarayı Bırakma</span>
+                  </a>
+                  <a href="" class="flex justify-center items-center flex-col gap-5">
+                    <figure class="w-[75px] h-[75px] rounded-[20px] overflow-hidden">
+                      <img src="/src/assets/images/shutterstock_1048382176.png" alt="">
+                    </figure>
+                    <span class="text-white font-bold whitespace-nowrap">Sigarayı Bırakma</span>
+                  </a>
+                  <a href="" class="flex justify-center items-center flex-col gap-5">
+                    <figure class="w-[75px] h-[75px] rounded-[20px] overflow-hidden">
+                      <img src="/src/assets/images/shutterstock_1048382176.png" alt="">
+                    </figure>
+                    <span class="text-white font-bold whitespace-nowrap">Sigarayı Bırakma</span>
+                  </a>
+                  <a href="" class="flex justify-center items-center flex-col gap-5">
+                    <figure class="w-[75px] h-[75px] rounded-[20px] overflow-hidden">
+                      <img src="/src/assets/images/shutterstock_1048382176.png" alt="">
+                    </figure>
+                    <span class="text-white font-bold whitespace-nowrap">Sigarayı Bırakma</span>
+                  </a>
+                  <a href="" class="flex justify-center items-center flex-col gap-5">
+                    <figure class="w-[75px] h-[75px] rounded-[20px] overflow-hidden">
+                      <img src="/src/assets/images/shutterstock_1048382176.png" alt="">
+                    </figure>
+                    <span class="text-white font-bold whitespace-nowrap">Sigarayı Bırakma</span>
+                  </a>
+                  <a href="" class="flex justify-center items-center flex-col gap-5">
+                    <figure class="w-[75px] h-[75px] rounded-[20px] overflow-hidden">
+                      <img src="/src/assets/images/shutterstock_1048382176.png" alt="">
+                    </figure>
+                    <span class="text-white font-bold whitespace-nowrap">Sigarayı Bırakma</span>
+                  </a>
+                </div>
+              </div>
+              <div class="col-span-2 shrink-0 xl:col-span-1 bg-white h-full w-full rounded-[21px] min-h-[469px] px-11 py-11 flex flex-col gap-4">
+                <a href="" class="flex flex-col xl:flex-row justify-center items-center gap-4">
+                  <figure class="max-w-[185px] max-h-[188px] lg:max-w-none lg:max-h-none aspect-square">
+                    <img class="h-full w-full" src="assets/images/shutterstock_104838.png" alt="">
+                  </figure>
+                  <div class="flex flex-col justify-center items-center xl:justify-start xl:items-start gap-2">
+                    <h2 class="font-bold text-fifth leading-tight">Sigarayı Bırakma</h2>
+                    <p class="text-xs font-normal text-center xl:text-left line-clamp-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <button class="btn bg-fifth text-white w-[76px] min-h-[36px] text-xs"><span class="-ml-3">GİT</span><i class="btn-arrow fas fa-chevron-right"></i></button>
+                  </div>
+                </a>
+                <a href="" class="flex flex-col xl:flex-row justify-center items-center gap-2">
+                  <figure class="max-w-[185px] max:h-[188px] xl:w-[185px] xl:h[185px] xl:shrink-0 aspect-square">
+                    <img class="h-full w-full" src="assets/images/shutterstock_104838.png" alt="">
+                  </figure>
+                  <div class="flex flex-col gap-3">
+                    <h2 class="font-bold text-fifth leading-tight">Sigarayı Bırakma</h2>
+                    <p class="text-xs font-normal line-clamp-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <button class="btn bg-fifth text-white w-[76px] min-h-[36px] text-xs"><span class="-ml-3">GİT</span><i class="btn-arrow fas fa-chevron-right"></i></button>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div tabindex="" class="group snap-start">
+            <a class="font-bold whitespace-nowrap flex" href=""><figure class="mr-10px shrink-0 flex justify-center items-center"><img src="/src/assets/images/kisiselbakim.png" alt=""></figure>KİŞİSEL BAKIM</a>
+          </div>
+          <div tabindex="" class="group snap-start">
+            <a class="font-bold whitespace-nowrap flex" href=""><figure class="mr-10px shrink-0 flex justify-center items-center"><img src="/src/assets/images/annebebek.png" alt=""></figure>ANNE&BEBEK</a>
+          </div>
+          <div tabindex="" class="group snap-start">
+            <a class="font-bold whitespace-nowrap flex" href=""><figure class="mr-10px shrink-0 flex justify-center items-center"><img src="/src/assets/images/medikal.png" alt=""></figure>MEDİKAL</a>
+          </div>
+          <div tabindex="" class="group snap-start">
+            <a class="font-bold whitespace-nowrap flex" href=""><figure class="mr-10px shrink-0 flex justify-center items-center"><img src="/src/assets/images/itriyat.png" alt=""></figure>İTRİYAT</a>
+          </div>
+          <div tabindex="" class="group snap-start">
+            <a class="font-bold whitespace-nowrap flex" href=""><figure class="mr-10px shrink-0 flex justify-center items-center"><img src="/src/assets/images/outdoor.png" alt=""></figure>OUTDOOR</a>
+          </div>
+        </ul>
+        <span class="whitespace-nowrap text-[#ED174A] font-bold block text-right">NOVADAN FIRSATLAR DÜNYASI</span>
+        </nav>
+      </section>  
+      <main class="pb-28 md:pb-0">
+             
+      </main>      
+    </div>
+    <footer class="bg-white pt-20">
+      <div class="container w-responsive">
+        <div class="grid grid-cols-1 lg:grid-cols-4 gap-12 pb-14 px-4 md:px-0 lg:px-10">
+          <div class="flex flex-col sm:flex-row col-span-1  lg:flex-col justify-center sm:justify-between items-center lg:justify-start lg:items-start gap-3">
+            <a href="" class="flex justify-center sm:justify-start">
+              <img src="/src/assets/images/Logo.png" alt="logo">
+            </a>
+            <div class="flex flex-col justify-center items-center text-center gap-2">
+              <div>
+                <h4 class="text-[15px] font-bold text-fifth">Uygulamayı Mobilden İndirin:</h4>
+                <span class="text-[15px] font-light text-fifth">İlk alışverişinizde %15 indirim kazanın!</span>
+              </div>
+              <div class="max-w-[252px] lg:max-w-[185px] xl:max-w-[252px] grid grid-cols-2 gap-2">
+                <a class="block w-full col-span-1" href="">
+                  <img class="w-full h-full" src="/src/assets/images/play-store.png" alt="">
+                </a>
+                <a class="block w-full col-span-1" href="">
+                  <img class="w-full h-full" src="/src/assets/images/appstore.png" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-span-1 lg:col-span-3 grid grid-cols-1 sm:grid-cols-4 justify-center items-center md:gap-3">
+            <div class="flex flex-col justify-center items-center border-t py-7 sm:border-0 sm:py-0">
+              <h2 class="link w-full text-center text-[20px] sm:text-[15px] sm:underline sm:decoration-1 font-bold text-fifth sm:mb-2">KURUMSAL</h2>
+              <ul class="content hidden sm:flex flex-col justify-center items-center gap-2 text-center">
+                <li><a href="" class="font-light text-fifth text-base sm:text-sm">Hakkımızda</a></li>
+                <li><a href="" class="font-light text-fifth text-base sm:text-sm">Misyon&Vizyon</a></li>
+                <li><a href="" class="font-light text-fifth text-base sm:text-sm">Üyelik Sözleşmesi</a></li>
+                <li><a href="" class="font-light text-fifth text-base sm:text-sm">Gizlilik ve Güvenlik Politikası</a></li>
+                <li><a href="" class="font-light text-fifth text-base sm:text-sm">KVKK Aydınlatma Metni</a></li>
+                <li><a href="" class="font-light text-fifth text-base sm:text-sm">İletişim</a></li>
+              </ul>
+            </div>
+            <div class="flex flex-col justify-center items-center border-t py-7 sm:border-0 sm:py-0">
+              <h2 class="link w-full text-center text-[20px] sm:text-[15px] sm:underline sm:decoration-1 font-bold text-fifth sm:mb-2">KURUMSAL</h2>
+              <ul class="content hidden sm:flex flex-col justify-center items-center gap-2 text-center">
+                <li><a href="" class="font-light text-fifth text-base sm:text-sm">Hakkımızda</a></li>
+                <li><a href="" class="font-light text-fifth text-base sm:text-sm">Misyon&Vizyon</a></li>
+                <li><a href="" class="font-light text-fifth text-base sm:text-sm">Üyelik Sözleşmesi</a></li>
+                <li><a href="" class="font-light text-fifth text-base sm:text-sm">Gizlilik ve Güvenlik Politikası</a></li>
+                <li><a href="" class="font-light text-fifth text-base sm:text-sm">KVKK Aydınlatma Metni</a></li>
+                <li><a href="" class="font-light text-fifth text-base sm:text-sm">İletişim</a></li>
+              </ul>
+            </div>
+            <div class="flex flex-col justify-center items-center border-t py-7 sm:border-0 sm:py-0">
+              <h2 class="link w-full text-center text-[20px] sm:text-[15px] sm:underline sm:decoration-1 font-bold text-fifth sm:mb-2">KURUMSAL</h2>
+              <ul class="content hidden sm:flex flex-col justify-center items-center gap-2 text-center">
+                <li><a href="" class="font-light text-fifth text-base sm:text-sm">Hakkımızda</a></li>
+                <li><a href="" class="font-light text-fifth text-base sm:text-sm">Misyon&Vizyon</a></li>
+                <li><a href="" class="font-light text-fifth text-base sm:text-sm">Üyelik Sözleşmesi</a></li>
+                <li><a href="" class="font-light text-fifth text-base sm:text-sm">Gizlilik ve Güvenlik Politikası</a></li>
+                <li><a href="" class="font-light text-fifth text-base sm:text-sm">KVKK Aydınlatma Metni</a></li>
+                <li><a href="" class="font-light text-fifth text-base sm:text-sm">İletişim</a></li>
+              </ul>
+            </div>
+            <div class="flex flex-col justify-center items-center border-t py-7 sm:border-0 sm:py-0">
+              <h2 class="link w-full text-center text-[20px] sm:text-[15px] sm:underline sm:decoration-1 font-bold text-fifth sm:mb-2">KURUMSAL</h2>
+              <ul class="content hidden sm:flex flex-col justify-center items-center gap-2 text-center">
+                <li><a href="" class="font-light text-fifth text-base sm:text-sm">Hakkımızda</a></li>
+                <li><a href="" class="font-light text-fifth text-base sm:text-sm">Misyon&Vizyon</a></li>
+                <li><a href="" class="font-light text-fifth text-base sm:text-sm">Üyelik Sözleşmesi</a></li>
+                <li><a href="" class="font-light text-fifth text-base sm:text-sm">Gizlilik ve Güvenlik Politikası</a></li>
+                <li><a href="" class="font-light text-fifth text-base sm:text-sm">KVKK Aydınlatma Metni</a></li>
+                <li><a href="" class="font-light text-fifth text-base sm:text-sm">İletişim</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>      
+      <div class="w-full border-t py-6">
+       <div class="container w-responsive flex flex-col md:flex-row justify-between items-center gap-4">
+        <span class="text-center ">Copyright 2020 @ Novadan Hizmetler Tic. A.Ş. Tüm Haklar Saklıdır. İzinsiz İçerik Kullanılamaz.</span>
+        <ul class="flex gap-2 text-fifth">
+          <li class="w-[16px] h-[16px] rounded-full border border-fifth p-3"><a href="" class="h-full w-full flex justify-center items-center"><i class="fab fa-twitter"></i></a></li>
+          <li class="w-[16px] h-[16px] rounded-full border border-fifth p-3"><a href="" class="h-full w-full flex justify-center items-center"><i class="fab fa-instagram"></i></a></li>
+          <li class="w-[16px] h-[16px] rounded-full border border-fifth p-3"><a href="" class="h-full w-full flex justify-center items-center"><i class="fab fa-facebook"></i></a></li>
+          <li class="w-[16px] h-[16px] rounded-full border border-fifth p-3"><a href="" class="h-full w-full flex justify-center items-center"><i class="fab fa-linkedin"></i></a></li>
+          <li class="w-[16px] h-[16px] rounded-full border border-fifth p-3"><a href="" class="h-full w-full flex justify-center items-center"><i class="fab fa-whatsapp"></i></a></li>
+        </ul>
+       </div>
+      </div>
+    </footer>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script>
+    var show = document.getElementById("menu_visible");
+    var close = document.getElementById("menu_invisible");
+    var menu  = document.getElementById("nav_menu");
+    show.addEventListener('click', function() {
+      show.classList.add("hidden");
+      close.classList.remove("hidden");
+      menu.classList.add("flex");
+      menu.classList.remove("hidden");
+      setTimeout(menu_show,100);
+    });
+
+    close.addEventListener('click', function(){
+      show.classList.remove("hidden");
+      close.classList.add("hidden");
+      menu.classList.remove("opacity-100");
+      menu.classList.add("opacity-0");
+      setTimeout(menu_close,500);      
+    });
+
+    function menu_show(){
+      menu.classList.remove("opacity-0");
+      menu.classList.add("opacity-100");
+    }
+    function menu_close(){
+      menu.classList.add("hidden");
+      menu.classList.remove("flex");
+    }
+  </script>
+
+  <script>
+    $(document).ready(function() {
+        if($(window).width() < 640){
+          function close_accordion_section() { //akordiyon bölümlerini kapat
+		$('.link').removeClass('active'); //active class sil
+		$('.content').slideUp(300).removeClass('open'); //sayfayi yukari dogru kapa yavasca kapat, open class sil
+	}
+	$('.link').click(function(e) {
+		if($(e.target).is('.active')) { //tiklanilan akordiyon sayfasi acik ise
+			close_accordion_section(); //kapat sayfayi
+		}else {
+			close_accordion_section(); //kapat sayfayi
+			$(this).addClass('active'); //tiklanilan akordiyonu aktif et
+			$(this).next().slideDown(300).addClass('open'); //tiklanan akordiyon icerigini asagi dogru yavasca ac ve open class ata
+		}
+		e.preventDefault(); //a href sayfa yonlendirme kapat
+	});
+        }
+    });
+
+  </script>
+</html>
+
+
+

@@ -1,9 +1,0 @@
-.author_cards {
-    width: 100%;
-    background-color: rgba($fourty, .4);
-    border: 1px solid rgba($border_color_secondary, .4);
-    @include px(20, 20);
-    @include py(20, 20);
-    @include displayFlex(row, flex-start, center, 10px);
-    flex-wrap: nowrap;
-}
