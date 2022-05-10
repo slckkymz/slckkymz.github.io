@@ -12,36 +12,32 @@
   
   <body class="bg-background flex flex-col min-h-screen justify-between scrollbar">
     <div class="container w-responsive md:pt-3">
-      <header class="w-responsive grid md:grid-cols-2 lg:grid-cols-[220px_1fr_290px]  gap-3 items-center sm:items-end justify-between bg-white shadow-md shadow-primary rounded-br-[30px] rounded-bl-[30px] md:rounded-[30px] px-6 py-6">
+      <header class="w-responsive grid md:grid-cols-2 lg:grid-cols-[243px_1fr_290px]  gap-3 items-center sm:items-end justify-between bg-white shadow-md shadow-primary rounded-br-[30px] rounded-bl-[30px] md:rounded-[30px] px-6 py-6">
         <div class="">
           <a href="/">
             <img loading="lazy" src="/assets/images/Logo.svg" alt="logo" />
           </a>
         </div>
-        <div class="hidden justify-end">
-          <button id="menu_visible"><i class="fas fa-bars text-3xl"></i></button>
-          <button id="menu_invisible" class="hidden"><i class="fas fa-xmark text-3xl"></i></button>
-        </div>
         <div class="col-span-2 lg:col-span-1 order-last lg:order-none border-t lg:border-0 border-t-primary mt-5 pt-5 lg:mt-0 lg:pt-0 flex flex-col h-full justify-between items-end flex-wrap w-full gap-y-2">
           <ul class="hidden lg:flex gap-4 text-fourth w-full justify-center items-center h-10">
-            <li class="text-sm relative after:h-3/4 after:w-[1px] after:rounded-md after:absolute after:-right-[10px] after:top-[2px] after:bg-fourth"><a href="">NOVACENT</a></li>
-            <li class="text-sm font-bold relative after:h-3/4 after:w-[1px] after:rounded-md after:absolute after:-right-[10px] after:top-[2px] after:bg-fourth"><a href="">ÇOKLU ARAMA</a></li>
-            <li class="text-sm relative after:h-3/4 after:w-[1px] after:rounded-md after:absolute after:-right-[10px] after:top-[2px] after:bg-fourth"><a href="">KAMPANYALAR</a></li>
-            <li class="text-sm"><a href="">İLETİŞİM</a></li>
+            <li class="whitespace-nowrap text-xs xl:text-sm relative after:h-3/4 after:w-[1px] after:rounded-md after:absolute after:-right-[10px] after:top-[2px] after:bg-fourth"><a href="">NOVACENT</a></li>
+            <li class="whitespace-nowrap text-xs xl:text-sm font-bold relative after:h-3/4 after:w-[1px] after:rounded-md after:absolute after:-right-[10px] after:top-[2px] after:bg-fourth"><a href="">ÇOKLU ARAMA</a></li>
+            <li class="whitespace-nowrap text-xs xl:text-sm relative after:h-3/4 after:w-[1px] after:rounded-md after:absolute after:-right-[10px] after:top-[2px] after:bg-fourth"><a href="">KAMPANYALAR</a></li>
+            <li class="whitespace-nowrap text-xs xl:text-sm"><a href="">İLETİŞİM</a></li>
           </ul>
             <form action="" tabindex="0" class="relative w-full group">
               <i class="fas fa-search absolute top-1/2 -translate-y-1/2 left-7 font-bold"></i>
               <input type="text" class="peer outline-none border-0 rounded-[30px] bg-primary w-full h-14 pl-16 focus:ring-0 focus:border-0" placeholder="Bioxcin Şampuan Forte Tüm Saçlara 300ml">
-              <button class="absolute h-full rounded-[30px]  px-7 bg-tenth right-0 top-0 flex justify-center items-center"><span class="hidden md:block mr-3 text-sm font-bold text-white">ÇOKLU ARA</span> <img loading="lazy" src="/assets/images/search_button.png"></img></button>
-              <section class="hidden group-focus-within:absolute group-focus-within:block bg-white mt-8 shadow-2xl pb-5 md:pb-0 rounded-[30px] z-50 lg:min-w-[735px]">
-                <div class="md:grid md:grid-cols-2 md:gap-3">
-                 <div class="bg-white rounded-[30px] mt-10px  py-5 order-2"> 
+              <button class="absolute h-full rounded-[30px]  px-7 bg-tenth right-0 top-0 flex justify-center items-center"><span class="hidden md:block lg:hidden xl:block mr-3 text-sm font-bold text-white">ÇOKLU ARA</span> <img loading="lazy" src="/assets/images/search_button.png"></img></button>
+              <section class="search_content hidden group-focus-within:absolute w-full left-0 group-focus-within:block bg-white mt-4 p-[25px] shadow-2xl pb-5 md:pb-0 rounded-[30px] z-50 lg:min-w-[735px]">
+                <div class="md:grid md:grid-cols-6 md:gap-3">
+                 <div class="bg-white rounded-[30px] mt-10px  py-5 order-2 md:col-span-4"> 
                    <div class="flex justify-between items-center px-7 mb-10px">
                      <h3 class="text-lg text-fifth font-bold">ÜRÜNLER</h3>
                      <button type="button" onclick="this.blur()" class="w-9 h-9 flex justify-center items-center rounded-full bg-primary"><i class="fas fa-xmark"></i></button>
                    </div>
-                   <div class="w-full h-[97px] rounded-[30px]  shadow-lg shadow-primary hover:bg-primary mb-10px">
-                     <a href="#" class="flex gap-4 px-7 py-4 w-full h-full">
+                   <div class="w-full h-[115px] rounded-[30px]  shadow-lg shadow-primary hover:bg-primary mb-10px">
+                     <a href="#" class="flex justify-start items-center gap-4 px-7 py-4 w-full h-full">
                        <figure class="shrink-0 w-16 h-16 rounded-[20px] border-[0.2px] border-fifth border-opacity-20">
                          <img loading="lazy" class="rounded-[20px]" src="/assets/images/1003437_1_small.png" alt="">
                        </figure>
@@ -52,45 +48,57 @@
                        </div>
                      </a>
                    </div>
-                   <div class="w-full h-[97px] rounded-[30px] shadow-lg shadow-primary hover:bg-primary mb-10px">
-                     <a href="#" class="flex gap-4 w-full h-full px-7 py-4 ">
-                       <figure class="shrink-0 w-16 h-16 rounded-[20px] border-[0.2px] border-fifth border-opacity-20">
-                         <img loading="lazy" class="rounded-[20px] " src="/assets/images/1003437_1_small.png" alt="">
-                       </figure>
-                       <div class="flex flex-col items-start justify-between">
-                         <h2 class="text-sm font-medium text-fifth line-clamp-1">Deotak Insivible Roll-On Women 35 ml</h2>
-                         <p class="text-sm font-normal text-tenth line-clamp-1">124,00₺'den başlayan ilanları incele</p>
-                         <span class="text-xs font-normal text-fourth">43 İLAN BULUNDU.</span>
-                       </div>
-                     </a>
-                   </div>
-                   <div class="w-full h-[97px] rounded-[30px] shadow-lg shadow-primary hover:bg-primary mb-10px">
-                     <a href="#" class="flex gap-4 px-7 py-4 w-full h-full">
-                       <figure class="shrink-0 w-16 h-16 rounded-[20px] border-[0.2px] border-fifth border-opacity-20">
-                         <img loading="lazy" class="rounded-[20px] " src="/assets/images/1003437_1_small.png" alt="">
-                       </figure>
-                       <div class="flex flex-col items-start justify-between">
-                         <h2 class="text-sm font-medium text-fifth line-clamp-1">Deotak Insivible Roll-On Women 35 ml</h2>
-                         <p class="text-sm font-normal text-tenth line-clamp-1">124,00₺'den başlayan ilanları incele</p>
-                         <span class="text-xs font-normal text-fourth">43 İLAN BULUNDU.</span>
-                       </div>
-                     </a>
-                   </div>
-                   <div class="w-full h-[97px] rounded-[30px] shadow-lg shadow-primary hover:bg-primary mb-10px">
-                     <a href="#" class="flex gap-4 px-7 py-4 w-full h-full">
-                       <figure class="shrink-0 w-16 h-16 rounded-[20px] border-[0.2px] border-fifth border-opacity-20">
-                         <img loading="lazy" class="rounded-[20px] " src="/assets/images/1003437_1_small.png" alt="">
-                       </figure>
-                       <div class="flex flex-col items-start justify-between">
-                         <h2 class="text-sm font-medium text-fifth line-clamp-1">Deotak Insivible Roll-On Women 35 ml</h2>
-                         <p class="text-sm font-normal text-tenth line-clamp-1">124,00₺'den başlayan ilanları incele</p>
-                         <span class="text-xs font-normal text-fourth">43 İLAN BULUNDU.</span>
-                       </div>
-                     </a>
-                   </div>
+                   <div class="w-full h-[115px] rounded-[30px]  shadow-lg shadow-primary hover:bg-primary mb-10px">
+                    <a href="#" class="flex justify-start items-center gap-4 px-7 py-4 w-full h-full">
+                      <figure class="shrink-0 w-16 h-16 rounded-[20px] border-[0.2px] border-fifth border-opacity-20">
+                        <img loading="lazy" class="rounded-[20px]" src="/assets/images/1003437_1_small.png" alt="">
+                      </figure>
+                      <div class="flex flex-col items-start justify-between">
+                        <h2 class="text-sm font-medium text-fifth line-clamp-1">Deotak Insivible Roll-On Women 35 ml</h2>
+                        <p class="text-sm font-normal text-tenth line-clamp-1">124,00₺'den başlayan ilanları incele</p>
+                        <span class="text-xs font-normal text-fourth">43 İLAN BULUNDU.</span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="w-full h-[115px] rounded-[30px]  shadow-lg shadow-primary hover:bg-primary mb-10px">
+                    <a href="#" class="flex justify-start items-center gap-4 px-7 py-4 w-full h-full">
+                      <figure class="shrink-0 w-16 h-16 rounded-[20px] border-[0.2px] border-fifth border-opacity-20">
+                        <img loading="lazy" class="rounded-[20px]" src="/assets/images/1003437_1_small.png" alt="">
+                      </figure>
+                      <div class="flex flex-col items-start justify-between">
+                        <h2 class="text-sm font-medium text-fifth line-clamp-1">Deotak Insivible Roll-On Women 35 ml</h2>
+                        <p class="text-sm font-normal text-tenth line-clamp-1">124,00₺'den başlayan ilanları incele</p>
+                        <span class="text-xs font-normal text-fourth">43 İLAN BULUNDU.</span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="w-full h-[115px] rounded-[30px]  shadow-lg shadow-primary hover:bg-primary mb-10px">
+                    <a href="#" class="flex justify-start items-center gap-4 px-7 py-4 w-full h-full">
+                      <figure class="shrink-0 w-16 h-16 rounded-[20px] border-[0.2px] border-fifth border-opacity-20">
+                        <img loading="lazy" class="rounded-[20px]" src="/assets/images/1003437_1_small.png" alt="">
+                      </figure>
+                      <div class="flex flex-col items-start justify-between">
+                        <h2 class="text-sm font-medium text-fifth line-clamp-1">Deotak Insivible Roll-On Women 35 ml</h2>
+                        <p class="text-sm font-normal text-tenth line-clamp-1">124,00₺'den başlayan ilanları incele</p>
+                        <span class="text-xs font-normal text-fourth">43 İLAN BULUNDU.</span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="w-full h-[115px] rounded-[30px]  shadow-lg shadow-primary hover:bg-primary mb-10px">
+                    <a href="#" class="flex justify-start items-center gap-4 px-7 py-4 w-full h-full">
+                      <figure class="shrink-0 w-16 h-16 rounded-[20px] border-[0.2px] border-fifth border-opacity-20">
+                        <img loading="lazy" class="rounded-[20px]" src="/assets/images/1003437_1_small.png" alt="">
+                      </figure>
+                      <div class="flex flex-col items-start justify-between">
+                        <h2 class="text-sm font-medium text-fifth line-clamp-1">Deotak Insivible Roll-On Women 35 ml</h2>
+                        <p class="text-sm font-normal text-tenth line-clamp-1">124,00₺'den başlayan ilanları incele</p>
+                        <span class="text-xs font-normal text-fourth">43 İLAN BULUNDU.</span>
+                      </div>
+                    </a>
+                  </div>
                  </div>
-                 <div class="order-1">
-                   <div class="bg-white rounded-[30px] mt-10px py-5 px-7">
+                 <div class="order-1 col-span-2">
+                   <div class="bg-white rounded-[30px] mt-10px py-5">
                      <div class="flex justify-between items-center mb-6">
                        <h3 class="text-lg text-fifth font-bold">MARKALAR</h3>
                      </div>
@@ -102,7 +110,7 @@
                        </li>
                      </ul>
                    </div>
-                   <div class="bg-white rounded-[30px] mt-10px py-5 px-7">
+                   <div class="bg-white rounded-[30px] mt-10px py-5">
                      <div class="flex justify-between items-center mb-6">
                        <h3 class="text-lg text-fifth font-bold">SATICILAR</h3>
                      </div>
@@ -119,8 +127,8 @@
                </section>
             </form>
         </div>
-        <div class="lg:col-span-1 md:flex md:flex-col grid-rows-2 justify-center items-end gap-7">
-          <ul class="flex bottom-0 left-0 relative bg-white w-full justify-end items-center gap-3 sm:mb-7">
+        <div class="lg:col-span-1 md:flex md:flex-col grid-rows-2 justify-center items-end gap-[20px]">
+          <ul class="flex bottom-0 left-0 relative bg-white w-full justify-end items-center gap-3 sm:mb-7 md:mb-0">
             <li class="group profile-menu transition-all duration-700 ease-in-out rounded-full w-10 h-10 bg-fifth sm:bg-[#F05A29] text-white sm:flex justify-center items-center shrink-0 relative md:hover:w-auto md:hover:max-w-[120px] md:hover:px-5 md:hover:flex-nowrap">
               <a href="" class="w-full h-full flex group-hover:gap-2 justify-center items-center">
                 <img loading="lazy" src="/assets/images/user_icon.svg" alt="">
@@ -985,15 +993,16 @@
         <section>
           <div class="campaing-slider v1 grid  grid-cols-1 md:grid-cols-8 lg:grid-cols-12 xl:grid-cols-10 gap-10px">
             <div class="text-content md:col-span-3 lg:col-span-5 xl:col-span-3">
-              <h4>Mayıs Ayına Özel Süper İndirimler</h4>
+              <h4>Mayıs Ayına Özel <br>Süper İndirimler</h4>
               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’.</p>
               <a class="btn-campany" href="">Kampanyaya Katıl <i class="fas fa-angle-right"></i></a>
             </div>
             <div class="w-full md:col-span-5 lg:col-span-7 justify-self-start relative xl:grid xl:grid-cols-7 xl:gap-10px">
               <div class="swiper campaing-slider-content campaing-slider-1 xl:col-span-6">
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide product-card group">
-                    <figure><img loading="lazy" src="/assets/images/urun_1.png" alt=""></figure>
+                  <div class="swiper-slide product-card-top group">
+                    <div class="product-card">
+                    <a class="product-image" href=""><img loading="lazy" src="/assets/images/urun_1.png" alt=""></a>
                     <div class="action-buttons">
                       <ul class="action-list">
                         <li class="action-element"><a class="action-link" href=""><i class="action-icon fas fa-heart"></i></a></li>
@@ -1001,19 +1010,23 @@
                         <li class="action-element"><a class="action-link" href=""><i class="action-icon fas fa-magnifying-glass-plus"></i></a></li>
                       </ul>
                     </div>
-                    <span class="advert-count">8 İLAN</span>
-                    <h3>Deotak Invisible Roll-On Women 35 ml</h3>
-                    <div class="price-content">
-                      <span class="old-price">20,00₺</span>
+                    <a href=""><span class="advert-count">8 İLAN</span></a>
+                    <a class="product-title" href=""><h3>Deotak Invisible Roll-On Women 35 ml</h3></a>
+                      <a href="" class="price-content">
+                        <span class="old-price">20,00₺</span>
                       <div class="new-price">
                         <p>EN UYGUN</p>
                         <span class="price">10,99₺</span>
                       </div>
+                      </a>
+                    </div>                  
+                    <div class="text-extra time">
+                      <a class="text-link" href="">3 GÜN 10:59:06</a>
                     </div>
-                    <a class="btn-card group-hover:opacity-100 group-hover:visible" href="">TÜM İLANLARA GİT</a>
                   </div>
-                  <div class="swiper-slide product-card group">
-                    <figure><img loading="lazy" src="/assets/images/urun_2.png" alt=""></figure>
+                  <div class="swiper-slide product-card-top group">
+                    <div class="product-card">
+                    <a class="product-image" href=""><img loading="lazy" src="/assets/images/urun_2.png" alt=""></a>
                     <div class="action-buttons">
                       <ul class="action-list">
                         <li class="action-element"><a class="action-link" href=""><i class="action-icon fas fa-heart"></i></a></li>
@@ -1021,19 +1034,23 @@
                         <li class="action-element"><a class="action-link" href=""><i class="action-icon fas fa-magnifying-glass-plus"></i></a></li>
                       </ul>
                     </div>
-                    <span class="advert-count">8 İLAN</span>
-                    <h3>Deotak Invisible Roll-On Women 35 ml</h3>
-                    <div class="price-content">
-                      <span class="old-price">20,00₺</span>
+                    <a href=""><span class="advert-count">8 İLAN</span></a>
+                    <a class="product-title" href=""><h3>Deotak Invisible Roll-On Women 35 ml</h3></a>
+                      <a href="" class="price-content">
+                        <span class="old-price">20,00₺</span>
                       <div class="new-price">
                         <p>EN UYGUN</p>
                         <span class="price">10,99₺</span>
                       </div>
+                      </a>
+                    </div>                  
+                    <div class="text-extra links">
+                      <a class="text-link" href="">TÜM İLANLARA GİT</a>
                     </div>
-                    <a class="btn-card group-hover:opacity-100 group-hover:visible" href="">TÜM İLANLARA GİT</a>
                   </div>
-                  <div class="swiper-slide product-card group">
-                    <figure><img loading="lazy" src="/assets/images/urun_3.png" alt=""></figure>
+                  <div class="swiper-slide product-card-top group">
+                    <div class="product-card">
+                    <a class="product-image" href=""><img loading="lazy" src="/assets/images/urun_3.png" alt=""></a>
                     <div class="action-buttons">
                       <ul class="action-list">
                         <li class="action-element"><a class="action-link" href=""><i class="action-icon fas fa-heart"></i></a></li>
@@ -1041,19 +1058,23 @@
                         <li class="action-element"><a class="action-link" href=""><i class="action-icon fas fa-magnifying-glass-plus"></i></a></li>
                       </ul>
                     </div>
-                    <span class="advert-count">8 İLAN</span>
-                    <h3>Deotak Invisible Roll-On Women 35 ml</h3>
-                    <div class="price-content">
-                      <span class="old-price">20,00₺</span>
+                    <a href=""><span class="advert-count">8 İLAN</span></a>
+                    <a class="product-title" href=""><h3>Deotak Invisible Roll-On Women 35 ml</h3></a>
+                      <a href="" class="price-content">
+                        <span class="old-price">20,00₺</span>
                       <div class="new-price">
                         <p>EN UYGUN</p>
                         <span class="price">10,99₺</span>
                       </div>
+                      </a>
+                    </div>                  
+                    <div class="text-extra time">
+                      <a class="text-link" href="">3 GÜN 10:59:06</a>
                     </div>
-                    <a class="btn-card group-hover:opacity-100 group-hover:visible" href="">TÜM İLANLARA GİT</a>
                   </div>
-                  <div class="swiper-slide product-card group">
-                    <figure><img loading="lazy" src="/assets/images/urun_4.png" alt=""></figure>
+                  <div class="swiper-slide product-card-top group">
+                    <div class="product-card">
+                    <a class="product-image" href=""><img loading="lazy" src="/assets/images/urun_4.png" alt=""></a>
                     <div class="action-buttons">
                       <ul class="action-list">
                         <li class="action-element"><a class="action-link" href=""><i class="action-icon fas fa-heart"></i></a></li>
@@ -1061,19 +1082,23 @@
                         <li class="action-element"><a class="action-link" href=""><i class="action-icon fas fa-magnifying-glass-plus"></i></a></li>
                       </ul>
                     </div>
-                    <span class="advert-count">8 İLAN</span>
-                    <h3>Deotak Invisible Roll-On Women 35 ml</h3>
-                    <div class="price-content">
-                      <span class="old-price">20,00₺</span>
+                    <a href=""><span class="advert-count">8 İLAN</span></a>
+                    <a class="product-title" href=""><h3>Deotak Invisible Roll-On Women 35 ml</h3></a>
+                      <a href="" class="price-content">
+                        <span class="old-price">20,00₺</span>
                       <div class="new-price">
                         <p>EN UYGUN</p>
                         <span class="price">10,99₺</span>
                       </div>
+                      </a>
+                    </div>                  
+                    <div class="text-extra time">
+                      <a class="text-link" href="">3 GÜN 10:59:06</a>
                     </div>
-                    <a class="btn-card group-hover:opacity-100 group-hover:visible" href="">TÜM İLANLARA GİT</a>
                   </div>
-                  <div class="swiper-slide product-card group">
-                    <figure><img loading="lazy" src="/assets/images/urun_5.png" alt=""></figure>
+                  <div class="swiper-slide product-card-top group">
+                    <div class="product-card">
+                    <a class="product-image" href=""><img loading="lazy" src="/assets/images/urun_5.png" alt=""></a>
                     <div class="action-buttons">
                       <ul class="action-list">
                         <li class="action-element"><a class="action-link" href=""><i class="action-icon fas fa-heart"></i></a></li>
@@ -1081,16 +1106,19 @@
                         <li class="action-element"><a class="action-link" href=""><i class="action-icon fas fa-magnifying-glass-plus"></i></a></li>
                       </ul>
                     </div>
-                    <span class="advert-count">8 İLAN</span>
-                    <h3>Deotak Invisible Roll-On Women 35 ml</h3>
-                    <div class="price-content">
-                      <span class="old-price">20,00₺</span>
+                    <a href=""><span class="advert-count">8 İLAN</span></a>
+                    <a class="product-title" href=""><h3>Deotak Invisible Roll-On Women 35 ml</h3></a>
+                      <a href="" class="price-content">
+                        <span class="old-price">20,00₺</span>
                       <div class="new-price">
                         <p>EN UYGUN</p>
                         <span class="price">10,99₺</span>
                       </div>
+                      </a>
+                    </div>                  
+                    <div class="text-extra time">
+                      <a class="text-link" href="">3 GÜN 10:59:06</a>
                     </div>
-                    <a class="btn-card group-hover:opacity-100 group-hover:visible" href="">TÜM İLANLARA GİT</a>
                   </div>
                 </div>
                 
@@ -1103,15 +1131,16 @@
           </div>
           <div class="campaing-slider v2 grid  grid-cols-1 md:grid-cols-8 lg:grid-cols-12 xl:grid-cols-10 gap-10px">
             <div class="text-content md:col-span-3 lg:col-span-5 xl:col-span-3">
-              <h4>Mayıs Ayına Özel Süper İndirimler</h4>
+              <h4>Mayıs Ayına Özel </br> Süper İndirimler</h4>
               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’.</p>
               <a class="btn-campany" href="">Kampanyaya Katıl <i class="fas fa-angle-right"></i></a>
             </div>
             <div class="w-full md:col-span-5 lg:col-span-7 justify-self-start relative xl:grid xl:grid-cols-7 xl:gap-10px">
               <div class="swiper campaing-slider-content campaing-slider-2 xl:col-span-6">
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide product-card group">
-                    <figure><img loading="lazy" src="/assets/images/urun_1.png" alt=""></figure>
+                  <div class="swiper-slide product-card-top group">
+                    <div class="product-card">
+                    <a class="product-image" href=""><img loading="lazy" src="/assets/images/urun_1.png" alt=""></a>
                     <div class="action-buttons">
                       <ul class="action-list">
                         <li class="action-element"><a class="action-link" href=""><i class="action-icon fas fa-heart"></i></a></li>
@@ -1119,19 +1148,23 @@
                         <li class="action-element"><a class="action-link" href=""><i class="action-icon fas fa-magnifying-glass-plus"></i></a></li>
                       </ul>
                     </div>
-                    <span class="advert-count">8 İLAN</span>
-                    <h3>Deotak Invisible Roll-On Women 35 ml</h3>
-                    <div class="price-content">
-                      <span class="old-price">20,00₺</span>
+                    <a href=""><span class="advert-count">8 İLAN</span></a>
+                    <a class="product-title" href=""><h3>Deotak Invisible Roll-On Women 35 ml</h3></a>
+                      <a href="" class="price-content">
+                        <span class="old-price">20,00₺</span>
                       <div class="new-price">
                         <p>EN UYGUN</p>
                         <span class="price">10,99₺</span>
                       </div>
+                      </a>
+                    </div>                  
+                    <div class="text-extra time">
+                      <a class="text-link" href="">3 GÜN 10:59:06</a>
                     </div>
-                    <a class="btn-card group-hover:opacity-100 group-hover:visible" href="">TÜM İLANLARA GİT</a>
                   </div>
-                  <div class="swiper-slide product-card group">
-                    <figure><img loading="lazy" src="/assets/images/urun_2.png" alt=""></figure>
+                  <div class="swiper-slide product-card-top group">
+                    <div class="product-card">
+                    <a class="product-image" href=""><img loading="lazy" src="/assets/images/urun_2.png" alt=""></a>
                     <div class="action-buttons">
                       <ul class="action-list">
                         <li class="action-element"><a class="action-link" href=""><i class="action-icon fas fa-heart"></i></a></li>
@@ -1139,19 +1172,23 @@
                         <li class="action-element"><a class="action-link" href=""><i class="action-icon fas fa-magnifying-glass-plus"></i></a></li>
                       </ul>
                     </div>
-                    <span class="advert-count">8 İLAN</span>
-                    <h3>Deotak Invisible Roll-On Women 35 ml</h3>
-                    <div class="price-content">
-                      <span class="old-price">20,00₺</span>
+                    <a href=""><span class="advert-count">8 İLAN</span></a>
+                    <a class="product-title" href=""><h3>Deotak Invisible Roll-On Women 35 ml</h3></a>
+                      <a href="" class="price-content">
+                        <span class="old-price">20,00₺</span>
                       <div class="new-price">
                         <p>EN UYGUN</p>
                         <span class="price">10,99₺</span>
                       </div>
+                      </a>
+                    </div>                  
+                    <div class="text-extra links">
+                      <a class="text-link" href="">TÜM İLANLARA GİT</a>
                     </div>
-                    <a class="btn-card group-hover:opacity-100 group-hover:visible" href="">TÜM İLANLARA GİT</a>
                   </div>
-                  <div class="swiper-slide product-card group">
-                    <figure><img loading="lazy" src="/assets/images/urun_3.png" alt=""></figure>
+                  <div class="swiper-slide product-card-top group">
+                    <div class="product-card">
+                    <a class="product-image" href=""><img loading="lazy" src="/assets/images/urun_3.png" alt=""></a>
                     <div class="action-buttons">
                       <ul class="action-list">
                         <li class="action-element"><a class="action-link" href=""><i class="action-icon fas fa-heart"></i></a></li>
@@ -1159,19 +1196,23 @@
                         <li class="action-element"><a class="action-link" href=""><i class="action-icon fas fa-magnifying-glass-plus"></i></a></li>
                       </ul>
                     </div>
-                    <span class="advert-count">8 İLAN</span>
-                    <h3>Deotak Invisible Roll-On Women 35 ml</h3>
-                    <div class="price-content">
-                      <span class="old-price">20,00₺</span>
+                    <a href=""><span class="advert-count">8 İLAN</span></a>
+                    <a class="product-title" href=""><h3>Deotak Invisible Roll-On Women 35 ml</h3></a>
+                      <a href="" class="price-content">
+                        <span class="old-price">20,00₺</span>
                       <div class="new-price">
                         <p>EN UYGUN</p>
                         <span class="price">10,99₺</span>
                       </div>
+                      </a>
+                    </div>                  
+                    <div class="text-extra time">
+                      <a class="text-link" href="">3 GÜN 10:59:06</a>
                     </div>
-                    <a class="btn-card group-hover:opacity-100 group-hover:visible" href="">TÜM İLANLARA GİT</a>
                   </div>
-                  <div class="swiper-slide product-card group">
-                    <figure><img loading="lazy" src="/assets/images/urun_4.png" alt=""></figure>
+                  <div class="swiper-slide product-card-top group">
+                    <div class="product-card">
+                    <a class="product-image" href=""><img loading="lazy" src="/assets/images/urun_4.png" alt=""></a>
                     <div class="action-buttons">
                       <ul class="action-list">
                         <li class="action-element"><a class="action-link" href=""><i class="action-icon fas fa-heart"></i></a></li>
@@ -1179,19 +1220,23 @@
                         <li class="action-element"><a class="action-link" href=""><i class="action-icon fas fa-magnifying-glass-plus"></i></a></li>
                       </ul>
                     </div>
-                    <span class="advert-count">8 İLAN</span>
-                    <h3>Deotak Invisible Roll-On Women 35 ml</h3>
-                    <div class="price-content">
-                      <span class="old-price">20,00₺</span>
+                    <a href=""><span class="advert-count">8 İLAN</span></a>
+                    <a class="product-title" href=""><h3>Deotak Invisible Roll-On Women 35 ml</h3></a>
+                      <a href="" class="price-content">
+                        <span class="old-price">20,00₺</span>
                       <div class="new-price">
                         <p>EN UYGUN</p>
                         <span class="price">10,99₺</span>
                       </div>
+                      </a>
+                    </div>                  
+                    <div class="text-extra time">
+                      <a class="text-link" href="">3 GÜN 10:59:06</a>
                     </div>
-                    <a class="btn-card group-hover:opacity-100 group-hover:visible" href="">TÜM İLANLARA GİT</a>
                   </div>
-                  <div class="swiper-slide product-card group">
-                    <figure><img loading="lazy" src="/assets/images/urun_5.png" alt=""></figure>
+                  <div class="swiper-slide product-card-top group">
+                    <div class="product-card">
+                    <a class="product-image" href=""><img loading="lazy" src="/assets/images/urun_5.png" alt=""></a>
                     <div class="action-buttons">
                       <ul class="action-list">
                         <li class="action-element"><a class="action-link" href=""><i class="action-icon fas fa-heart"></i></a></li>
@@ -1199,16 +1244,19 @@
                         <li class="action-element"><a class="action-link" href=""><i class="action-icon fas fa-magnifying-glass-plus"></i></a></li>
                       </ul>
                     </div>
-                    <span class="advert-count">8 İLAN</span>
-                    <h3>Deotak Invisible Roll-On Women 35 ml</h3>
-                    <div class="price-content">
-                      <span class="old-price">20,00₺</span>
+                    <a href=""><span class="advert-count">8 İLAN</span></a>
+                    <a class="product-title" href=""><h3>Deotak Invisible Roll-On Women 35 ml</h3></a>
+                      <a href="" class="price-content">
+                        <span class="old-price">20,00₺</span>
                       <div class="new-price">
                         <p>EN UYGUN</p>
                         <span class="price">10,99₺</span>
                       </div>
+                      </a>
+                    </div>                  
+                    <div class="text-extra time">
+                      <a class="text-link" href="">3 GÜN 10:59:06</a>
                     </div>
-                    <a class="btn-card group-hover:opacity-100 group-hover:visible" href="">TÜM İLANLARA GİT</a>
                   </div>
                 </div>
                 
@@ -1221,15 +1269,16 @@
           </div>
           <div class="campaing-slider v3 grid  grid-cols-1 md:grid-cols-8 lg:grid-cols-12 xl:grid-cols-10 gap-10px">
             <div class="text-content md:col-span-3 lg:col-span-5 xl:col-span-3">
-              <h4>Mayıs Ayına Özel Süper İndirimler</h4>
+              <h4>Mayıs Ayına Özel <br>Süper İndirimler</h4>
               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’.</p>
               <a class="btn-campany" href="">Kampanyaya Katıl <i class="fas fa-angle-right"></i></a>
             </div>
             <div class="w-full md:col-span-5 lg:col-span-7 justify-self-start relative xl:grid xl:grid-cols-7 xl:gap-10px">
               <div class="swiper campaing-slider-content campaing-slider-3 xl:col-span-6">
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide product-card group">
-                    <figure><img loading="lazy" src="/assets/images/urun_1.png" alt=""></figure>
+                  <div class="swiper-slide product-card-top group">
+                    <div class="product-card">
+                    <a class="product-image" href=""><img loading="lazy" src="/assets/images/urun_1.png" alt=""></a>
                     <div class="action-buttons">
                       <ul class="action-list">
                         <li class="action-element"><a class="action-link" href=""><i class="action-icon fas fa-heart"></i></a></li>
@@ -1237,19 +1286,23 @@
                         <li class="action-element"><a class="action-link" href=""><i class="action-icon fas fa-magnifying-glass-plus"></i></a></li>
                       </ul>
                     </div>
-                    <span class="advert-count">8 İLAN</span>
-                    <h3>Deotak Invisible Roll-On Women 35 ml</h3>
-                    <div class="price-content">
-                      <span class="old-price">20,00₺</span>
+                    <a href=""><span class="advert-count">8 İLAN</span></a>
+                    <a class="product-title" href=""><h3>Deotak Invisible Roll-On Women 35 ml</h3></a>
+                      <a href="" class="price-content">
+                        <span class="old-price">20,00₺</span>
                       <div class="new-price">
                         <p>EN UYGUN</p>
                         <span class="price">10,99₺</span>
                       </div>
+                      </a>
+                    </div>                  
+                    <div class="text-extra time">
+                      <a class="text-link" href="">3 GÜN 10:59:06</a>
                     </div>
-                    <a class="btn-card group-hover:opacity-100 group-hover:visible" href="">TÜM İLANLARA GİT</a>
                   </div>
-                  <div class="swiper-slide product-card group">
-                    <figure><img loading="lazy" src="/assets/images/urun_2.png" alt=""></figure>
+                  <div class="swiper-slide product-card-top group">
+                    <div class="product-card">
+                    <a class="product-image" href=""><img loading="lazy" src="/assets/images/urun_2.png" alt=""></a>
                     <div class="action-buttons">
                       <ul class="action-list">
                         <li class="action-element"><a class="action-link" href=""><i class="action-icon fas fa-heart"></i></a></li>
@@ -1257,19 +1310,23 @@
                         <li class="action-element"><a class="action-link" href=""><i class="action-icon fas fa-magnifying-glass-plus"></i></a></li>
                       </ul>
                     </div>
-                    <span class="advert-count">8 İLAN</span>
-                    <h3>Deotak Invisible Roll-On Women 35 ml</h3>
-                    <div class="price-content">
-                      <span class="old-price">20,00₺</span>
+                    <a href=""><span class="advert-count">8 İLAN</span></a>
+                    <a class="product-title" href=""><h3>Deotak Invisible Roll-On Women 35 ml</h3></a>
+                      <a href="" class="price-content">
+                        <span class="old-price">20,00₺</span>
                       <div class="new-price">
                         <p>EN UYGUN</p>
                         <span class="price">10,99₺</span>
                       </div>
+                      </a>
+                    </div>                  
+                    <div class="text-extra links">
+                      <a class="text-link" href="">TÜM İLANLARA GİT</a>
                     </div>
-                    <a class="btn-card group-hover:opacity-100 group-hover:visible" href="">TÜM İLANLARA GİT</a>
                   </div>
-                  <div class="swiper-slide product-card group">
-                    <figure><img loading="lazy" src="/assets/images/urun_3.png" alt=""></figure>
+                  <div class="swiper-slide product-card-top group">
+                    <div class="product-card">
+                    <a class="product-image" href=""><img loading="lazy" src="/assets/images/urun_3.png" alt=""></a>
                     <div class="action-buttons">
                       <ul class="action-list">
                         <li class="action-element"><a class="action-link" href=""><i class="action-icon fas fa-heart"></i></a></li>
@@ -1277,19 +1334,23 @@
                         <li class="action-element"><a class="action-link" href=""><i class="action-icon fas fa-magnifying-glass-plus"></i></a></li>
                       </ul>
                     </div>
-                    <span class="advert-count">8 İLAN</span>
-                    <h3>Deotak Invisible Roll-On Women 35 ml</h3>
-                    <div class="price-content">
-                      <span class="old-price">20,00₺</span>
+                    <a href=""><span class="advert-count">8 İLAN</span></a>
+                    <a class="product-title" href=""><h3>Deotak Invisible Roll-On Women 35 ml</h3></a>
+                      <a href="" class="price-content">
+                        <span class="old-price">20,00₺</span>
                       <div class="new-price">
                         <p>EN UYGUN</p>
                         <span class="price">10,99₺</span>
                       </div>
+                      </a>
+                    </div>                  
+                    <div class="text-extra time">
+                      <a class="text-link" href="">3 GÜN 10:59:06</a>
                     </div>
-                    <a class="btn-card group-hover:opacity-100 group-hover:visible" href="">TÜM İLANLARA GİT</a>
                   </div>
-                  <div class="swiper-slide product-card group">
-                    <figure><img loading="lazy" src="/assets/images/urun_4.png" alt=""></figure>
+                  <div class="swiper-slide product-card-top group">
+                    <div class="product-card">
+                    <a class="product-image" href=""><img loading="lazy" src="/assets/images/urun_4.png" alt=""></a>
                     <div class="action-buttons">
                       <ul class="action-list">
                         <li class="action-element"><a class="action-link" href=""><i class="action-icon fas fa-heart"></i></a></li>
@@ -1297,19 +1358,23 @@
                         <li class="action-element"><a class="action-link" href=""><i class="action-icon fas fa-magnifying-glass-plus"></i></a></li>
                       </ul>
                     </div>
-                    <span class="advert-count">8 İLAN</span>
-                    <h3>Deotak Invisible Roll-On Women 35 ml</h3>
-                    <div class="price-content">
-                      <span class="old-price">20,00₺</span>
+                    <a href=""><span class="advert-count">8 İLAN</span></a>
+                    <a class="product-title" href=""><h3>Deotak Invisible Roll-On Women 35 ml</h3></a>
+                      <a href="" class="price-content">
+                        <span class="old-price">20,00₺</span>
                       <div class="new-price">
                         <p>EN UYGUN</p>
                         <span class="price">10,99₺</span>
                       </div>
+                      </a>
+                    </div>                  
+                    <div class="text-extra time">
+                      <a class="text-link" href="">3 GÜN 10:59:06</a>
                     </div>
-                    <a class="btn-card group-hover:opacity-100 group-hover:visible" href="">TÜM İLANLARA GİT</a>
                   </div>
-                  <div class="swiper-slide product-card group">
-                    <figure><img loading="lazy" src="/assets/images/urun_5.png" alt=""></figure>
+                  <div class="swiper-slide product-card-top group">
+                    <div class="product-card">
+                    <a class="product-image" href=""><img loading="lazy" src="/assets/images/urun_5.png" alt=""></a>
                     <div class="action-buttons">
                       <ul class="action-list">
                         <li class="action-element"><a class="action-link" href=""><i class="action-icon fas fa-heart"></i></a></li>
@@ -1317,16 +1382,19 @@
                         <li class="action-element"><a class="action-link" href=""><i class="action-icon fas fa-magnifying-glass-plus"></i></a></li>
                       </ul>
                     </div>
-                    <span class="advert-count">8 İLAN</span>
-                    <h3>Deotak Invisible Roll-On Women 35 ml</h3>
-                    <div class="price-content">
-                      <span class="old-price">20,00₺</span>
+                    <a href=""><span class="advert-count">8 İLAN</span></a>
+                    <a class="product-title" href=""><h3>Deotak Invisible Roll-On Women 35 ml</h3></a>
+                      <a href="" class="price-content">
+                        <span class="old-price">20,00₺</span>
                       <div class="new-price">
                         <p>EN UYGUN</p>
                         <span class="price">10,99₺</span>
                       </div>
+                      </a>
+                    </div>                  
+                    <div class="text-extra time">
+                      <a class="text-link" href="">3 GÜN 10:59:06</a>
                     </div>
-                    <a class="btn-card group-hover:opacity-100 group-hover:visible" href="">TÜM İLANLARA GİT</a>
                   </div>
                 </div>
                 
@@ -1353,7 +1421,7 @@
                   <span>10,99₺</span>
                   <p>'DEN BAŞLAYAN 12 İLAN BULUNDU</p>
                 </div>
-                <a>FIRSATI KAÇIRMA! <i class="fas fa-angle-right"></i></a>
+                <a href="">FIRSATI KAÇIRMA! <i class="fas fa-angle-right"></i></a>
               </div>
             </div>
             </div>
@@ -1715,8 +1783,9 @@
           <div class="product-slider">
             <div class="swiper product-slider-content product-slider-1">
               <div class="swiper-wrapper">
-                <div class="swiper-slide product-card group">
-                  <figure><img loading="lazy" src="/assets/images/urun_1.png" alt=""></figure>
+                <div class="swiper-slide product-card-top group">
+                  <div class="product-card">
+                  <a class="product-image" href=""><img loading="lazy" src="/assets/images/urun_1.png" alt=""></a>
                   <div class="action-buttons">
                     <ul class="action-list">
                       <li class="action-element"><a class="action-link" href=""><i class="action-icon fas fa-heart"></i></a></li>
@@ -1724,43 +1793,23 @@
                       <li class="action-element"><a class="action-link" href=""><i class="action-icon fas fa-magnifying-glass-plus"></i></a></li>
                     </ul>
                   </div>
-                  <span class="advert-count">8 İLAN</span>
-                  <h3>Deotak Invisible Roll-On Women 35 ml</h3>
-                  <div class="price-content">
-                    <span class="old-price">20,00₺</span>
+                  <a href=""><span class="advert-count">8 İLAN</span></a>
+                  <a class="product-title" href=""><h3>Deotak Invisible Roll-On Women 35 ml</h3></a>
+                    <a href="" class="price-content">
+                      <span class="old-price">20,00₺</span>
                     <div class="new-price">
                       <p>EN UYGUN</p>
                       <span class="price">10,99₺</span>
                     </div>
+                    </a>
+                  </div>                  
+                  <div class="text-extra time">
+                    <a class="text-link" href="">3 GÜN 10:59:06</a>
                   </div>
-                  <div class="time">
-                    <p>KAMPANYA SÜRESİ</p>
-                    <span>3 GÜN 10:59:06</span>
-                  </div>
-                  <a class="btn-card group-hover:opacity-100 group-hover:visible" href="">TÜM İLANLARA GİT</a>
                 </div>
-                <div class="swiper-slide product-card group">
-                  <figure><img loading="lazy" src="/assets/images/urun_2.png" alt=""></figure>
-                  <div class="action-buttons">
-                    <ul class="action-list">
-                      <li class="action-element active"><a class="action-link" href=""><i class="action-icon fas fa-heart"></i></a></li>
-                      <li class="action-element"><a class="action-link" href=""><i class="action-icon fas fa-up-right-from-square"></i></a></li>
-                      <li class="action-element"><a class="action-link" href=""><i class="action-icon fas fa-magnifying-glass-plus"></i></a></li>
-                    </ul>
-                  </div>
-                  <span class="advert-count">8 İLAN</span>
-                  <h3>Deotak Invisible Roll-On Women 35 ml</h3>
-                  <div class="price-content">
-                    <span class="old-price">20,00₺</span>
-                    <div class="new-price">
-                      <p>EN UYGUN</p>
-                      <span class="price">10,99₺</span>
-                    </div>
-                  </div>                 
-                  <a class="btn-card group-hover:opacity-100 group-hover:visible" href="">TÜM İLANLARA GİT</a>
-                </div>
-                <div class="swiper-slide product-card group">
-                  <figure><img loading="lazy" src="/assets/images/urun_3.png" alt=""></figure>
+                <div class="swiper-slide product-card-top group">
+                  <div class="product-card">
+                  <a class="product-image" href=""><img loading="lazy" src="/assets/images/urun_2.png" alt=""></a>
                   <div class="action-buttons">
                     <ul class="action-list">
                       <li class="action-element"><a class="action-link" href=""><i class="action-icon fas fa-heart"></i></a></li>
@@ -1768,47 +1817,23 @@
                       <li class="action-element"><a class="action-link" href=""><i class="action-icon fas fa-magnifying-glass-plus"></i></a></li>
                     </ul>
                   </div>
-                  <span class="advert-count">8 İLAN</span>
-                  <h3>Deotak Invisible Roll-On Women 35 ml</h3>
-                  <div class="price-content">
-                    <span class="old-price">20,00₺</span>
+                  <a href=""><span class="advert-count">8 İLAN</span></a>
+                  <a class="product-title" href=""><h3>Deotak Invisible Roll-On Women 35 ml</h3></a>
+                    <a href="" class="price-content">
+                      <span class="old-price">20,00₺</span>
                     <div class="new-price">
                       <p>EN UYGUN</p>
                       <span class="price">10,99₺</span>
                     </div>
+                    </a>
+                  </div>                  
+                  <div class="text-extra links">
+                    <a class="text-link" href="">TÜM İLANLARA GİT</a>
                   </div>
-                  <div class="time">
-                    <p>KAMPANYA SÜRESİ</p>
-                    <span>3 GÜN 10:59:06</span>
-                  </div>
-                  <a class="btn-card group-hover:opacity-100 group-hover:visible" href="">TÜM İLANLARA GİT</a>
                 </div>
-                <div class="swiper-slide product-card group">
-                  <figure><img loading="lazy" src="/assets/images/urun_4.png" alt=""></figure>
-                  <div class="action-buttons">
-                    <ul class="action-list">
-                      <li class="action-element active"><a class="action-link" href=""><i class="action-icon fas fa-heart"></i></a></li>
-                      <li class="action-element"><a class="action-link" href=""><i class="action-icon fas fa-up-right-from-square"></i></a></li>
-                      <li class="action-element"><a class="action-link" href=""><i class="action-icon fas fa-magnifying-glass-plus"></i></a></li>
-                    </ul>
-                  </div>
-                  <span class="advert-count">8 İLAN</span>
-                  <h3>Deotak Invisible Roll-On Women 35 ml</h3>
-                  <div class="price-content">
-                    <span class="old-price">20,00₺</span>
-                    <div class="new-price">
-                      <p>EN UYGUN</p>
-                      <span class="price">10,99₺</span>
-                    </div>
-                  </div>
-                  <div class="time">
-                    <p>KAMPANYA SÜRESİ</p>
-                    <span>3 GÜN 10:59:06</span>
-                  </div>
-                  <a class="btn-card group-hover:opacity-100 group-hover:visible" href="">TÜM İLANLARA GİT</a>
-                </div>
-                <div class="swiper-slide product-card group">
-                  <figure><img loading="lazy" src="/assets/images/urun_5.png" alt=""></figure>
+                <div class="swiper-slide product-card-top group">
+                  <div class="product-card">
+                  <a class="product-image" href=""><img loading="lazy" src="/assets/images/urun_3.png" alt=""></a>
                   <div class="action-buttons">
                     <ul class="action-list">
                       <li class="action-element"><a class="action-link" href=""><i class="action-icon fas fa-heart"></i></a></li>
@@ -1816,20 +1841,67 @@
                       <li class="action-element"><a class="action-link" href=""><i class="action-icon fas fa-magnifying-glass-plus"></i></a></li>
                     </ul>
                   </div>
-                  <span class="advert-count">8 İLAN</span>
-                  <h3>Deotak Invisible Roll-On Women 35 ml</h3>
-                  <div class="price-content">
-                    <span class="old-price">20,00₺</span>
+                  <a href=""><span class="advert-count">8 İLAN</span></a>
+                  <a class="product-title" href=""><h3>Deotak Invisible Roll-On Women 35 ml</h3></a>
+                    <a href="" class="price-content">
+                      <span class="old-price">20,00₺</span>
                     <div class="new-price">
                       <p>EN UYGUN</p>
                       <span class="price">10,99₺</span>
                     </div>
+                    </a>
+                  </div>                  
+                  <div class="text-extra time">
+                    <a class="text-link" href="">3 GÜN 10:59:06</a>
                   </div>
-                  <div class="time">
-                    <p>KAMPANYA SÜRESİ</p>
-                    <span>3 GÜN 10:59:06</span>
+                </div>
+                <div class="swiper-slide product-card-top group">
+                  <div class="product-card">
+                  <a class="product-image" href=""><img loading="lazy" src="/assets/images/urun_4.png" alt=""></a>
+                  <div class="action-buttons">
+                    <ul class="action-list">
+                      <li class="action-element"><a class="action-link" href=""><i class="action-icon fas fa-heart"></i></a></li>
+                      <li class="action-element"><a class="action-link" href=""><i class="action-icon fas fa-up-right-from-square"></i></a></li>
+                      <li class="action-element"><a class="action-link" href=""><i class="action-icon fas fa-magnifying-glass-plus"></i></a></li>
+                    </ul>
                   </div>
-                  <a class="btn-card group-hover:opacity-100 group-hover:visible" href="">TÜM İLANLARA GİT</a>
+                  <a href=""><span class="advert-count">8 İLAN</span></a>
+                  <a class="product-title" href=""><h3>Deotak Invisible Roll-On Women 35 ml</h3></a>
+                    <a href="" class="price-content">
+                      <span class="old-price">20,00₺</span>
+                    <div class="new-price">
+                      <p>EN UYGUN</p>
+                      <span class="price">10,99₺</span>
+                    </div>
+                    </a>
+                  </div>                  
+                  <div class="text-extra time">
+                    <a class="text-link" href="">3 GÜN 10:59:06</a>
+                  </div>
+                </div>
+                <div class="swiper-slide product-card-top group">
+                  <div class="product-card">
+                  <a class="product-image" href=""><img loading="lazy" src="/assets/images/urun_5.png" alt=""></a>
+                  <div class="action-buttons">
+                    <ul class="action-list">
+                      <li class="action-element"><a class="action-link" href=""><i class="action-icon fas fa-heart"></i></a></li>
+                      <li class="action-element"><a class="action-link" href=""><i class="action-icon fas fa-up-right-from-square"></i></a></li>
+                      <li class="action-element"><a class="action-link" href=""><i class="action-icon fas fa-magnifying-glass-plus"></i></a></li>
+                    </ul>
+                  </div>
+                  <a href=""><span class="advert-count">8 İLAN</span></a>
+                  <a class="product-title" href=""><h3>Deotak Invisible Roll-On Women 35 ml</h3></a>
+                    <a href="" class="price-content">
+                      <span class="old-price">20,00₺</span>
+                    <div class="new-price">
+                      <p>EN UYGUN</p>
+                      <span class="price">10,99₺</span>
+                    </div>
+                    </a>
+                  </div>                  
+                  <div class="text-extra time">
+                    <a class="text-link" href="">3 GÜN 10:59:06</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1846,8 +1918,9 @@
           <div class="product-slider">
             <div class="swiper product-slider-content product-slider-2">
               <div class="swiper-wrapper">
-                <div class="swiper-slide product-card group">
-                  <figure><img loading="lazy" src="/assets/images/urun_1.png" alt=""></figure>
+                <div class="swiper-slide product-card-top group">
+                  <div class="product-card">
+                  <a class="product-image" href=""><img loading="lazy" src="/assets/images/urun_1.png" alt=""></a>
                   <div class="action-buttons">
                     <ul class="action-list">
                       <li class="action-element"><a class="action-link" href=""><i class="action-icon fas fa-heart"></i></a></li>
@@ -1855,43 +1928,23 @@
                       <li class="action-element"><a class="action-link" href=""><i class="action-icon fas fa-magnifying-glass-plus"></i></a></li>
                     </ul>
                   </div>
-                  <span class="advert-count">8 İLAN</span>
-                  <h3>Deotak Invisible Roll-On Women 35 ml</h3>
-                  <div class="price-content">
-                    <span class="old-price">20,00₺</span>
+                  <a href=""><span class="advert-count">8 İLAN</span></a>
+                  <a class="product-title" href=""><h3>Deotak Invisible Roll-On Women 35 ml</h3></a>
+                    <a href="" class="price-content">
+                      <span class="old-price">20,00₺</span>
                     <div class="new-price">
                       <p>EN UYGUN</p>
                       <span class="price">10,99₺</span>
                     </div>
+                    </a>
+                  </div>                  
+                  <div class="text-extra time">
+                    <a class="text-link" href="">3 GÜN 10:59:06</a>
                   </div>
-                  <div class="time">
-                    <p>KAMPANYA SÜRESİ</p>
-                    <span>3 GÜN 10:59:06</span>
-                  </div>
-                  <a class="btn-card group-hover:opacity-100 group-hover:visible" href="">TÜM İLANLARA GİT</a>
                 </div>
-                <div class="swiper-slide product-card group">
-                  <figure><img loading="lazy" src="/assets/images/urun_2.png" alt=""></figure>
-                  <div class="action-buttons">
-                    <ul class="action-list">
-                      <li class="action-element active"><a class="action-link" href=""><i class="action-icon fas fa-heart"></i></a></li>
-                      <li class="action-element"><a class="action-link" href=""><i class="action-icon fas fa-up-right-from-square"></i></a></li>
-                      <li class="action-element"><a class="action-link" href=""><i class="action-icon fas fa-magnifying-glass-plus"></i></a></li>
-                    </ul>
-                  </div>
-                  <span class="advert-count">8 İLAN</span>
-                  <h3>Deotak Invisible Roll-On Women 35 ml</h3>
-                  <div class="price-content">
-                    <span class="old-price">20,00₺</span>
-                    <div class="new-price">
-                      <p>EN UYGUN</p>
-                      <span class="price">10,99₺</span>
-                    </div>
-                  </div>                 
-                  <a class="btn-card group-hover:opacity-100 group-hover:visible" href="">TÜM İLANLARA GİT</a>
-                </div>
-                <div class="swiper-slide product-card group">
-                  <figure><img loading="lazy" src="/assets/images/urun_3.png" alt=""></figure>
+                <div class="swiper-slide product-card-top group">
+                  <div class="product-card">
+                  <a class="product-image" href=""><img loading="lazy" src="/assets/images/urun_2.png" alt=""></a>
                   <div class="action-buttons">
                     <ul class="action-list">
                       <li class="action-element"><a class="action-link" href=""><i class="action-icon fas fa-heart"></i></a></li>
@@ -1899,47 +1952,23 @@
                       <li class="action-element"><a class="action-link" href=""><i class="action-icon fas fa-magnifying-glass-plus"></i></a></li>
                     </ul>
                   </div>
-                  <span class="advert-count">8 İLAN</span>
-                  <h3>Deotak Invisible Roll-On Women 35 ml</h3>
-                  <div class="price-content">
-                    <span class="old-price">20,00₺</span>
+                  <a href=""><span class="advert-count">8 İLAN</span></a>
+                  <a class="product-title" href=""><h3>Deotak Invisible Roll-On Women 35 ml</h3></a>
+                    <a href="" class="price-content">
+                      <span class="old-price">20,00₺</span>
                     <div class="new-price">
                       <p>EN UYGUN</p>
                       <span class="price">10,99₺</span>
                     </div>
+                    </a>
+                  </div>                  
+                  <div class="text-extra links">
+                    <a class="text-link" href="">TÜM İLANLARA GİT</a>
                   </div>
-                  <div class="time">
-                    <p>KAMPANYA SÜRESİ</p>
-                    <span>3 GÜN 10:59:06</span>
-                  </div>
-                  <a class="btn-card group-hover:opacity-100 group-hover:visible" href="">TÜM İLANLARA GİT</a>
                 </div>
-                <div class="swiper-slide product-card group">
-                  <figure><img loading="lazy" src="/assets/images/urun_4.png" alt=""></figure>
-                  <div class="action-buttons">
-                    <ul class="action-list">
-                      <li class="action-element active"><a class="action-link" href=""><i class="action-icon fas fa-heart"></i></a></li>
-                      <li class="action-element"><a class="action-link" href=""><i class="action-icon fas fa-up-right-from-square"></i></a></li>
-                      <li class="action-element"><a class="action-link" href=""><i class="action-icon fas fa-magnifying-glass-plus"></i></a></li>
-                    </ul>
-                  </div>
-                  <span class="advert-count">8 İLAN</span>
-                  <h3>Deotak Invisible Roll-On Women 35 ml</h3>
-                  <div class="price-content">
-                    <span class="old-price">20,00₺</span>
-                    <div class="new-price">
-                      <p>EN UYGUN</p>
-                      <span class="price">10,99₺</span>
-                    </div>
-                  </div>
-                  <div class="time">
-                    <p>KAMPANYA SÜRESİ</p>
-                    <span>3 GÜN 10:59:06</span>
-                  </div>
-                  <a class="btn-card group-hover:opacity-100 group-hover:visible" href="">TÜM İLANLARA GİT</a>
-                </div>
-                <div class="swiper-slide product-card group">
-                  <figure><img loading="lazy" src="/assets/images/urun_5.png" alt=""></figure>
+                <div class="swiper-slide product-card-top group">
+                  <div class="product-card">
+                  <a class="product-image" href=""><img loading="lazy" src="/assets/images/urun_3.png" alt=""></a>
                   <div class="action-buttons">
                     <ul class="action-list">
                       <li class="action-element"><a class="action-link" href=""><i class="action-icon fas fa-heart"></i></a></li>
@@ -1947,20 +1976,67 @@
                       <li class="action-element"><a class="action-link" href=""><i class="action-icon fas fa-magnifying-glass-plus"></i></a></li>
                     </ul>
                   </div>
-                  <span class="advert-count">8 İLAN</span>
-                  <h3>Deotak Invisible Roll-On Women 35 ml</h3>
-                  <div class="price-content">
-                    <span class="old-price">20,00₺</span>
+                  <a href=""><span class="advert-count">8 İLAN</span></a>
+                  <a class="product-title" href=""><h3>Deotak Invisible Roll-On Women 35 ml</h3></a>
+                    <a href="" class="price-content">
+                      <span class="old-price">20,00₺</span>
                     <div class="new-price">
                       <p>EN UYGUN</p>
                       <span class="price">10,99₺</span>
                     </div>
+                    </a>
+                  </div>                  
+                  <div class="text-extra time">
+                    <a class="text-link" href="">3 GÜN 10:59:06</a>
                   </div>
-                  <div class="time">
-                    <p>KAMPANYA SÜRESİ</p>
-                    <span>3 GÜN 10:59:06</span>
+                </div>
+                <div class="swiper-slide product-card-top group">
+                  <div class="product-card">
+                  <a class="product-image" href=""><img loading="lazy" src="/assets/images/urun_4.png" alt=""></a>
+                  <div class="action-buttons">
+                    <ul class="action-list">
+                      <li class="action-element"><a class="action-link" href=""><i class="action-icon fas fa-heart"></i></a></li>
+                      <li class="action-element"><a class="action-link" href=""><i class="action-icon fas fa-up-right-from-square"></i></a></li>
+                      <li class="action-element"><a class="action-link" href=""><i class="action-icon fas fa-magnifying-glass-plus"></i></a></li>
+                    </ul>
                   </div>
-                  <a class="btn-card group-hover:opacity-100 group-hover:visible" href="">TÜM İLANLARA GİT</a>
+                  <a href=""><span class="advert-count">8 İLAN</span></a>
+                  <a class="product-title" href=""><h3>Deotak Invisible Roll-On Women 35 ml</h3></a>
+                    <a href="" class="price-content">
+                      <span class="old-price">20,00₺</span>
+                    <div class="new-price">
+                      <p>EN UYGUN</p>
+                      <span class="price">10,99₺</span>
+                    </div>
+                    </a>
+                  </div>                  
+                  <div class="text-extra time">
+                    <a class="text-link" href="">3 GÜN 10:59:06</a>
+                  </div>
+                </div>
+                <div class="swiper-slide product-card-top group">
+                  <div class="product-card">
+                  <a class="product-image" href=""><img loading="lazy" src="/assets/images/urun_5.png" alt=""></a>
+                  <div class="action-buttons">
+                    <ul class="action-list">
+                      <li class="action-element"><a class="action-link" href=""><i class="action-icon fas fa-heart"></i></a></li>
+                      <li class="action-element"><a class="action-link" href=""><i class="action-icon fas fa-up-right-from-square"></i></a></li>
+                      <li class="action-element"><a class="action-link" href=""><i class="action-icon fas fa-magnifying-glass-plus"></i></a></li>
+                    </ul>
+                  </div>
+                  <a href=""><span class="advert-count">8 İLAN</span></a>
+                  <a class="product-title" href=""><h3>Deotak Invisible Roll-On Women 35 ml</h3></a>
+                    <a href="" class="price-content">
+                      <span class="old-price">20,00₺</span>
+                    <div class="new-price">
+                      <p>EN UYGUN</p>
+                      <span class="price">10,99₺</span>
+                    </div>
+                    </a>
+                  </div>                  
+                  <div class="text-extra time">
+                    <a class="text-link" href="">3 GÜN 10:59:06</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -2124,7 +2200,7 @@
       </div>      
       <div class="w-full border-t py-6">
        <div class="container w-responsive flex flex-col md:flex-row justify-between items-center gap-4">
-        <span class="text-center ">Copyright 2020 @ Novadan Hizmetler Tic. A.Ş. Tüm Haklar Saklıdır. İzinsiz İçerik Kullanılamaz.</span>
+        <span class="text-center font-light text-xs">Copyright 2020 @ Novadan Hizmetler Tic. A.Ş. Tüm Haklar Saklıdır. İzinsiz İçerik Kullanılamaz.</span>
         <ul class="flex gap-2 text-fifth">
           <li class="w-[16px] h-[16px] rounded-full border border-fifth p-3"><a href="" class="h-full w-full flex justify-center items-center"><i class="fab fa-twitter"></i></a></li>
           <li class="w-[16px] h-[16px] rounded-full border border-fifth p-3"><a href="" class="h-full w-full flex justify-center items-center"><i class="fab fa-instagram"></i></a></li>
@@ -2265,6 +2341,7 @@
             loop: true,
             pagination: {
                 el: '.swiper-pagination',
+                clickable: true
             }
         })
 
@@ -2349,7 +2426,7 @@
         },
         breakpoints: {
           640: {
-            slidesPerView:4,
+            slidesPerView:3,
             spaceBetween: 10,
           },
           768: {
@@ -2378,7 +2455,7 @@
         },
         breakpoints: {
           640: {
-            slidesPerView:4,
+            slidesPerView:3,
             spaceBetween: 10,
           },
           768: {
@@ -2402,11 +2479,38 @@
 
   <script>
     $( document ).ready(function() {
-      console.log($(document).width());
     var width = $(document).width();
     if(width < 640) {
       $(".profile-menu > a").attr("href","#");
     }
+    });
+  </script>
+
+  <script>
+    $(document).ready(function() {
+	function close_accordion_section() { //akordiyon bölümlerini kapat
+		$('footer .content').slideUp(300).removeClass('open');
+	}
+	$('footer .link').click(function(e) {
+			close_accordion_section(); //kapat sayfayi
+			$(this).next().slideDown(300).addClass('open');
+	});
+});
+
+  </script>
+
+  <script>
+    $(document).ready(function () {
+      var width = $(".w-responsive").width();
+      var windowWidth = $(window).width();
+      if(windowWidth < 1024){
+        $(".search_content").attr("style","width:"+width+"px!important;left:50%!important;transform:translateX(-50%)");
+      }
+      else if(windowWidth > 1280){
+      }
+      else {
+        $(".search_content").attr("style","width:"+width+"px!important;left:56%!important;transform:translateX(-50%)");
+      }
     });
   </script>
 
