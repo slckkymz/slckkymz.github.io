@@ -27,7 +27,7 @@
               <a href="#contact">İletişim</a>
             </nav>
             <div class="landing-menu-buttons">
-              <a href="" class="landing-menu-button"
+              <a href="" class="landing-menu-button show_popup"
                 ><img src="/assets/images/landing/register.svg" alt="" />Üye
                 Ol</a
               >
@@ -420,118 +420,153 @@
         </div>
       </section>
     </main>
-    <section>
-      <div class="bottom_sheet first splash">
-        <button class="handle">
-          <img src="/assets/images/landing/sheet.svg" alt="" />
-        </button>
-        <div class="content">
-          <button class="sheet_btn bg-indigoNova btn_login">
-            <img src="/assets/images/landing/sheet_login.svg" alt="" />
-            Giriş Yap
+    <section class="sheet_group">
+      <div class="sheet_content">
+        <div class="bottom_sheet first splash">
+          <button class="handle">
+            <img src="/assets/images/landing/sheet.svg" alt="" />
           </button>
-          <button class="sheet_btn bg-orangeNova btn_fast">
-            <img src="/assets/images/landing/sheet_register.svg" alt="" />
-            Üye Ol
-          </button>
-          <button class="sheet_btn_empty mt-[25px] btn_forgot_password">
-            Şifremi Unuttum
-          </button>
-          <p class="sheet_text">
-            Novadan üyesi olmak için asla ücret ödemezsiniz.
-          </p>
-        </div>
-        <footer class="sheet_footer">
-          <img src="/assets/images/landing/sheet_logo.svg" alt="" />
-        </footer>
-      </div>
-      <div class="bottom_sheet login">
-        <button class="handle">
-          <img src="/assets/images/landing/sheet.svg" alt="" />
-        </button>
-        <div class="content">
-          <form action="">
-            <div class="sheet_form_control mail">
-              <input type="text" placeholder="E-Posta / GLN / Kullanıcı Adı" />
-            </div>
-            <div class="sheet_form_control password">
-              <input type="password" placeholder="Şifreniz" />
-            </div>
-            <button type="submit" class="sheet_btn bg-indigoNova">
+          <div class="content">
+            <button class="sheet_btn bg-indigoNova btn_login">
+              <img src="/assets/images/landing/sheet_login.svg" alt="" />
               Giriş Yap
             </button>
-          </form>
-          <button type="button" class="sheet_btn bg-orangeNova btn_fast">
-            Hızlı Giriş Yap
-          </button>
-          <button type="button" class="sheet_btn_empty mt-[25px]">
-            Henüz üye değil misiniz?
-          </button>
-        </div>
-        <footer class="sheet_footer">
-          <img src="/assets/images/landing/sheet_logo.svg" alt="" />
-        </footer>
-      </div>
-      <div class="bottom_sheet fast_login">
-        <button class="handle">
-          <img src="/assets/images/landing/sheet.svg" alt="" />
-        </button>
-        <div class="content">
-          <div class="sheet_header">
-            <img src="/assets/images/landing/sheet_timer.svg" alt="" />
-            Hızlı Giriş
+            <button class="sheet_btn bg-orangeNova btn_fast">
+              <img src="/assets/images/landing/sheet_register.svg" alt="" />
+              Üye Ol
+            </button>
+            <button class="sheet_btn_empty mt-[25px] btn_forgot_password">
+              Şifremi Unuttum
+            </button>
+            <p class="sheet_text">
+              Novadan üyesi olmak için asla ücret ödemezsiniz.
+            </p>
           </div>
-          <form action="">
-            <div class="sheet_form_control mail">
-              <input type="text" placeholder="E-Posta / GLN / Kullanıcı Adı" />
-            </div>
-            <button type="submit" class="sheet_btn bg-orangeNova">
+          <footer class="sheet_footer">
+            <img src="/assets/images/landing/sheet_logo.svg" alt="" />
+            <p class="sheet_web_text">
+              Türkiye’nin En Büyük<br />
+              Pazaryerinde Yerinizi Alın
+            </p>
+            <span class="sheet_web_title">Novadan’a Hoşgeldiniz.</span>
+          </footer>
+        </div>
+        <div class="bottom_sheet login">
+          <button class="handle">
+            <img src="/assets/images/landing/sheet.svg" alt="" />
+          </button>
+          <div class="content">
+            <form action="">
+              <div class="sheet_form_control mail">
+                <input
+                  type="text"
+                  placeholder="E-Posta / GLN / Kullanıcı Adı"
+                />
+              </div>
+              <div class="sheet_form_control password">
+                <input type="password" placeholder="Şifreniz" />
+              </div>
+              <button type="submit" class="sheet_btn bg-indigoNova">
+                Giriş Yap
+              </button>
+            </form>
+            <button type="button" class="sheet_btn bg-orangeNova btn_fast">
               Hızlı Giriş Yap
             </button>
-          </form>
-          <button type="button" class="sheet_btn_empty mt-[25px]">
-            Henüz üye değil misiniz?
-          </button>
-        </div>
-        <footer class="sheet_footer">
-          <img src="/assets/images/landing/sheet_logo.svg" alt="" />
-        </footer>
-      </div>
-      <div class="bottom_sheet forgot_password">
-        <button class="handle">
-          <img src="/assets/images/landing/sheet.svg" alt="" />
-        </button>
-        <div class="content">
-          <div class="sheet_header">
-            <img src="/assets/images/landing/sheet_locked.svg" alt="" />
-            Şifremi Unuttum
-          </div>
-          <form action="">
-            <div class="sheet_form_control mail">
-              <input type="text" placeholder="E-Posta / GLN / Kullanıcı Adı" />
-            </div>
-            <button type="submit" class="sheet_btn bg-indigoNova">
-              Şifremi Değiştir
+            <button type="button" class="sheet_btn_empty mt-[25px]">
+              Henüz üye değil misiniz?
             </button>
-            <div class="form_check">
-              <div class="sheet_check">
-                <input type="checkbox" id="email" />
-                <label for="email" class=""> E-Mail </label>
-              </div>
-              <div class="sheet_check">
-                <input type="checkbox" id="sms" />
-                <label for="sms" class="">Sms</label>
-              </div>
-            </div>
-          </form>
-          <p class="sheet_text">
-            Novadan üyesi olmak için asla ücret ödemezsiniz.
-          </p>
+          </div>
+          <footer class="sheet_footer">
+            <img src="/assets/images/landing/sheet_logo.svg" alt="" />
+            <p class="sheet_web_text">
+              Türkiye’nin En Büyük<br />
+              Pazaryerinde Yerinizi Alın
+            </p>
+            <span class="sheet_web_title">Giriş Yap</span>
+          </footer>
         </div>
-        <footer class="sheet_footer">
-          <img src="/assets/images/landing/sheet_logo.svg" alt="" />
-        </footer>
+        <div class="bottom_sheet fast_login">
+          <button class="handle">
+            <img src="/assets/images/landing/sheet.svg" alt="" />
+          </button>
+          <div class="content">
+            <div class="sheet_header">
+              <img src="/assets/images/landing/sheet_timer.svg" alt="" />
+              Hızlı Giriş
+            </div>
+            <form action="">
+              <div class="sheet_form_control mail">
+                <input
+                  type="text"
+                  placeholder="E-Posta / GLN / Kullanıcı Adı"
+                />
+              </div>
+              <button type="submit" class="sheet_btn bg-orangeNova">
+                Hızlı Giriş Yap
+              </button>
+            </form>
+            <button type="button" class="sheet_btn_empty mt-[25px]">
+              Henüz üye değil misiniz?
+            </button>
+          </div>
+          <footer class="sheet_footer">
+            <img src="/assets/images/landing/sheet_logo.svg" alt="" />
+            <p class="sheet_web_text">
+              Türkiye’nin En Büyük<br />
+              Pazaryerinde Yerinizi Alın
+            </p>
+            <span class="sheet_web_title">Hızlı Giriş Yap.</span>
+          </footer>
+        </div>
+        <div class="bottom_sheet forgot_password">
+          <button class="handle">
+            <img src="/assets/images/landing/sheet.svg" alt="" />
+          </button>
+          <div class="content">
+            <div class="sheet_header">
+              <img src="/assets/images/landing/sheet_locked.svg" alt="" />
+              Şifremi Unuttum
+            </div>
+            <form action="">
+              <div class="sheet_form_control mail">
+                <input
+                  type="text"
+                  placeholder="E-Posta / GLN / Kullanıcı Adı"
+                />
+              </div>
+              <button type="submit" class="sheet_btn bg-indigoNova">
+                Şifremi Değiştir
+              </button>
+              <div class="form_check">
+                <div class="sheet_check">
+                  <input type="checkbox" id="email" />
+                  <label for="email" class=""> E-Mail </label>
+                </div>
+                <div class="sheet_check">
+                  <input type="checkbox" id="sms" />
+                  <label for="sms" class="">Sms</label>
+                </div>
+              </div>
+            </form>
+            <p class="sheet_text">
+              Novadan üyesi olmak için asla ücret ödemezsiniz.
+            </p>
+          </div>
+          <footer class="sheet_footer">
+            <img src="/assets/images/landing/sheet_logo.svg" alt="" />
+            <p class="sheet_web_text">
+              Türkiye’nin En Büyük<br />
+              Pazaryerinde Yerinizi Alın
+            </p>
+            <span class="sheet_web_title">Şifremi Unuttum</span>
+          </footer>
+        </div>
       </div>
+      <figure class="sheet_web_bg">
+        <span class="sheet_close">&times;</span>
+        <img src="/assets/images/landing/sheet_web_bg.svg" alt="" />
+      </figure>
     </section>
     <footer class="bg-white pt-20">
       <div class="container w-responsive">
@@ -940,6 +975,34 @@
           $(this).removeClass("active");
           $(".landing-menu-show").addClass("active");
         });
+      });
+    </script>
+
+    <script>
+      $(".show_popup").click(function (e) {
+        e.preventDefault();
+        $(".sheet_group").addClass("active");
+      });
+
+      $(document).ready(function () {
+        var width = $(document).width();
+        if (width > 1024) {
+          $(".splash").addClass("active");
+        }
+      });
+
+      $(".sheet_close").click(function (e) {
+        e.preventDefault();
+        $(".sheet_group").removeClass("active");
+        $(".splash").addClass("first");
+        $(".bottom_sheet").removeClass("active");
+        $(".splash").addClass("active");
+        $(".sheet_web_bg").attr("style", "");
+      });
+
+      $(".bottom_sheet button").click(function (e) {
+        var height = $(".sheet_content").height();
+        $(".sheet_web_bg").attr("style", "height:" + height + "px");
       });
     </script>
   </body>
