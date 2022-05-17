@@ -420,9 +420,9 @@
         </div>
       </section>
     </main>
-    <section class="sheet_group">
+    <section class="sheet_group active">
       <div class="sheet_content">
-        <div class="bottom_sheet first splash">
+        <div class="bottom_sheet first active splash">
           <button class="handle">
             <img src="/assets/images/landing/sheet.svg" alt="" />
           </button>
@@ -431,7 +431,7 @@
               <img src="/assets/images/landing/sheet_login.svg" alt="" />
               Giriş Yap
             </button>
-            <button class="sheet_btn bg-orangeNova btn_fast">
+            <button class="sheet_btn bg-orangeNova btn_register">
               <img src="/assets/images/landing/sheet_register.svg" alt="" />
               Üye Ol
             </button>
@@ -457,13 +457,13 @@
           </button>
           <div class="content">
             <form action="">
-              <div class="sheet_form_control mail">
+              <div class="sheet_form_control mail valid">
                 <input
                   type="text"
                   placeholder="E-Posta / GLN / Kullanıcı Adı"
                 />
               </div>
-              <div class="sheet_form_control password">
+              <div class="sheet_form_control password invalid">
                 <input type="password" placeholder="Şifreniz" />
               </div>
               <button type="submit" class="sheet_btn bg-indigoNova">
@@ -561,6 +561,210 @@
             </p>
             <span class="sheet_web_title">Şifremi Unuttum</span>
           </footer>
+        </div>
+        <div class="bottom_sheet register">
+          <button class="handle">
+            <img src="/assets/images/landing/sheet.svg" alt="" />
+          </button>
+          <div class="content">
+            <form action="">
+              <div class="sheet_form_control mail">
+                <input
+                  type="text"
+                  id="register_gln"
+                  placeholder="GLN Numaranız"
+                />
+              </div>
+              <div class="sheet_form_control mail">
+                <input type="text" placeholder="Kullanıcı Adınız" />
+              </div>
+              <div class="sheet_form_control password">
+                <input type="password" placeholder="Şifreniz" />
+              </div>
+              <div class="sheet_form_control mail">
+                <input
+                  type="text"
+                  placeholder="Referens Kişi (zorunlu değil)"
+                />
+              </div>
+              <button type="submit" class="sheet_btn bg-orangeNova">
+                Kaydol
+              </button>
+              <div class="form_col">
+                <div class="sheet_check">
+                  <input type="checkbox" id="email" />
+                  <label for="email" class=""
+                    >İsim: <span>İsim Bilgisi Giriniz</span></label
+                  >
+                </div>
+                <div class="sheet_check">
+                  <input type="checkbox" id="sms" />
+                  <label for="sms" class=""
+                    >Email: <span>Email Adresinizi Giriniz</span></label
+                  >
+                </div>
+                <div class="sheet_check">
+                  <input type="checkbox" id="sms" />
+                  <label for="sms" class=""
+                    >Eczane Adı: <span>Eczane Adını Giriniz</span></label
+                  >
+                </div>
+                <div class="sheet_check">
+                  <input type="checkbox" id="sms" />
+                  <label for="sms" class=""
+                    >Üyelik Sözleşmesi Kabul Ediyorum</label
+                  >
+                </div>
+              </div>
+            </form>
+          </div>
+          <footer class="sheet_footer">
+            <img src="/assets/images/landing/sheet_logo.svg" alt="" />
+            <p class="sheet_web_text">
+              Türkiye’nin En Büyük<br />
+              Pazaryerinde Yerinizi Alın
+            </p>
+            <span class="sheet_web_title">Şifremi Unuttum</span>
+          </footer>
+        </div>
+        <div class="bottom_sheet change_password">
+          <button class="handle">
+            <img src="/assets/images/landing/sheet.svg" alt="" />
+          </button>
+          <div class="content">
+            <form action="">
+              <div class="sheet_form_control password">
+                <input type="password" placeholder="Yeni Şifre" />
+              </div>
+              <div class="sheet_form_control password">
+                <input type="password" placeholder="Yeni Şifre Tekrar" />
+              </div>
+              <button type="submit" class="sheet_btn bg-orangeNova">
+                Şifremi Değiştir
+              </button>
+            </form>
+            <div class="form_validation">
+              <span class="invalid">* En az 1 küçük harf</span>
+              <span class="invalid">* En az 1 büyük harf</span>
+              <span class="invalid">* En az 1 rakam</span>
+              <span class="invalid">* En az 8 karakter</span>
+              <span class="invalid">* En fazla 50 karakter girmelisiniz</span>
+            </div>
+          </div>
+          <footer class="sheet_footer">
+            <img src="/assets/images/landing/sheet_logo.svg" alt="" />
+            <p class="sheet_web_text">
+              Türkiye’nin En Büyük<br />
+              Pazaryerinde Yerinizi Alın
+            </p>
+            <span class="sheet_web_title">Şifremi Unuttum</span>
+          </footer>
+        </div>
+        <div class="bottom_sheet register_extend">
+          <button class="handle">
+            <img src="/assets/images/landing/sheet.svg" alt="" />
+          </button>
+          <div class="content">
+            <h3 class="header_title">YENİ HESAP OLUŞTUR</h3>
+            <p class="header_text">Kişisel Bilgileriniz</p>
+            <form action="">
+              <div class="sheet_form_control">
+                <input type="text" placeholder="Kullanıcı Adı" />
+              </div>
+              <div class="sheet_form_control">
+                <input type="text" placeholder="Adınız" />
+              </div>
+              <div class="sheet_form_control">
+                <input type="text" placeholder="Soyadınız" />
+              </div>
+              <div class="sheet_form_control">
+                <input type="text" placeholder="E-Mail Adresiniz" />
+              </div>
+              <div class="sheet_form_control">
+                <input type="text" placeholder="GLN Numaranız" />
+              </div>
+              <div class="sheet_form_control">
+                <input type="text" placeholder="Telefon Numaranız" />
+              </div>
+              <div class="sheet_form_control">
+                <select name="" id="">
+                  <option selected disabled value="">İl</option>
+                  <option value="">İlçe</option>
+                </select>
+              </div>
+              <div class="sheet_form_control">
+                <input type="text" placeholder="Eczanenizin Adı" />
+              </div>
+              <div class="sheet_form_control">
+                <input
+                  type="text"
+                  placeholder="Aktivite Alanı(Dişçi, Eczacı vb..)"
+                />
+              </div>
+              <p class="header_text">Firma Bilgileriniz</p>
+              <div class="sheet_form_control">
+                <input type="text" placeholder="Firma Adı" />
+              </div>
+              <div class="sheet_form_control">
+                <input type="text" placeholder="Kuruluş Tipi" />
+              </div>
+              <div class="sheet_form_control">
+                <input type="text" placeholder="Vergi Daireniz" />
+              </div>
+              <div class="sheet_form_control">
+                <input type="text" placeholder="Vergi Numaranız" />
+              </div>
+              <p class="header_text">Banka Kartı Bilgileriniz</p>
+              <div class="sheet_form_control">
+                <input type="text" placeholder="Iban Numaranız" />
+              </div>
+              <div class="sheet_form_control">
+                <input type="text" placeholder="Adınız" />
+              </div>
+              <div class="sheet_form_control">
+                <input type="text" placeholder="Soyadınız" />
+              </div>
+              <button type="submit" class="sheet_btn bg-orangeNova">
+                Kaydı Tamamla
+              </button>
+            </form>
+          </div>
+          <footer class="sheet_footer">
+            <img src="/assets/images/landing/sheet_logo.svg" alt="" />
+            <p class="sheet_web_text">
+              Türkiye’nin En Büyük<br />
+              Pazaryerinde Yerinizi Alın
+            </p>
+          </footer>
+        </div>
+        <div class="bottom_sheet_alert warning">
+          <span class="alert_title"
+            ><img src="/assets/images/landing/sheet_warning.svg" alt="" />
+            ÜZGÜNÜZ</span
+          >
+          <p class="alert_text">
+            GLN Numarası bulunamadı. Lütfen kontrol edin veya eczanenizi yeni
+            açtıysanız novadan destek ekibinden yardım talep ediniz.
+          </p>
+          <button
+            type="button"
+            class="sheet_btn_register sheet_btn bg-orangeNova"
+          >
+            Başvuru Yap
+          </button>
+          <button type="submit" class="sheet_btn_empty">
+            Şifremi Sıfırlamak İstiyorum !
+          </button>
+        </div>
+        <div class="bottom_sheet_alert success">
+          <span class="alert_title success"> BAŞARILI KAYIT !</span>
+          <div class="sheet_form_control locked">
+            <input type="text" placeholder="Güvenlik Kodunu Giriniz.." />
+          </div>
+          <button type="button" class="sheet_btn bg-orangeNova">Onayla</button>
+          <button type="button" class="sheet_btn bg-[#E0E0E0] text-indigoNova">
+            İptal Et
+          </button>
         </div>
       </div>
       <figure class="sheet_web_bg">
@@ -892,118 +1096,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
+    <script src="/assets/js/landing_page.js"></script>
     <!-- Initialize Swiper -->
-    <script>
-      var swiper = new Swiper(".landing-header-slider", {
-        direction: "vertical",
-        grabCursor: true,
-        pagination: {
-          el: ".swiper-pagination-slider",
-          clickable: true,
-        },
-      });
-    </script>
-
-    <script>
-      var swiper = new Swiper(".landing-slider-company", {
-        slidesPerView: 1,
-        spaceBetween: 15,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        breakpoints: {
-          375: {
-            slidesPerView: 2,
-            spaceBetween: 15,
-          },
-          768: {
-            slidesPerView: 2,
-            spaceBetween: 15,
-          },
-          1024: {
-            slidesPerView: 4,
-            spaceBetween: 15,
-          },
-        },
-      });
-    </script>
-
-    <script>
-      $(".handle").click(function () {
-        if ($(this).parent().hasClass("active")) {
-          $(this).parent().removeClass("active");
-          $(this).parent().removeClass("first");
-        } else {
-          $(this).parent().addClass("active");
-          $(".bottom_sheet").removeClass("first");
-          $(".splash").addClass("first");
-        }
-
-        if (!$(".bottom_sheet").hasClass("first")) {
-          $(".splash").addClass("first");
-        }
-      });
-
-      $(".btn_login").click(function () {
-        $(".splash").removeClass("active");
-        $(".login").addClass("active");
-        $(".login").addClass("first");
-      });
-      $(".btn_fast").click(function () {
-        $(".login").removeClass("active");
-        $(".login").removeClass("first");
-        $(".fast_login").addClass("active");
-        $(".fast_login").addClass("first");
-      });
-      $(".btn_forgot_password").click(function () {
-        $(".splash").removeClass("active");
-        $(".splash").removeClass("first");
-        $(".forgot_password").addClass("active");
-        $(".forgot_password").addClass("first");
-      });
-    </script>
-
-    <script>
-      $(document).ready(function () {
-        $(".landing-menu-show").click(function () {
-          $(this).removeClass("active");
-          $(".landing-menu-close").addClass("active");
-        });
-        $(".landing-menu-close").click(function () {
-          $(this).removeClass("active");
-          $(".landing-menu-show").addClass("active");
-        });
-      });
-    </script>
-
-    <script>
-      $(".show_popup").click(function (e) {
-        e.preventDefault();
-        $(".sheet_group").addClass("active");
-      });
-
-      $(document).ready(function () {
-        var width = $(document).width();
-        if (width > 1024) {
-          $(".splash").addClass("active");
-        }
-      });
-
-      $(".sheet_close").click(function (e) {
-        e.preventDefault();
-        $(".sheet_group").removeClass("active");
-        $(".splash").addClass("first");
-        $(".bottom_sheet").removeClass("active");
-        $(".splash").addClass("active");
-        $(".sheet_web_bg").attr("style", "");
-      });
-
-      $(".bottom_sheet button").click(function (e) {
-        var height = $(".sheet_content").height();
-        $(".sheet_web_bg").attr("style", "height:" + height + "px");
-      });
-    </script>
   </body>
 </html>
