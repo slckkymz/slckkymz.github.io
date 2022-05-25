@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="color-scheme" content="light only" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <title>Novadan Category Grid Main</title>
+  </head>
+  <body
+    class="bg-lightBlueNova flex flex-col min-h-screen justify-between scrollbar"
+  >
+    <div class="container w-responsive md:pt-3">        
+      <main class="my-10px">
+        <section aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Anasayfa</a></li>
+            <li class="breadcrumb-item"><a href="#">Eczaneler</a></li>
+            <li class="breadcrumb-item active"><p>Poyraz Eczanesi</p></li>
+          </ul>
+        </section>
+        <section>
+            <div class="campany_card_center">
+                <div class="card_item v1">
+                    <h2>MART AYINA ÖZEL <br>HEDİYE YAĞMURU</h2>
+                    <a href="#" class="btn">Kampanyayı İncele <img src="/assets/images/right_arrow.svg" alt=""> </a>
+                </div>
+                <div class="card_item v2">
+                    <h2>MART AYINA ÖZEL <br>HEDİYE YAĞMURU</h2>
+                    <a href="#" class="btn">Kampanyayı İncele <img src="/assets/images/right_arrow.svg" alt=""></a>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="category_main">
+                <div class="category_order">
+                    <p>Toplam <span>7271</span> adet ürün var.</p>
+                    <div class="category_order_content">
+                        <select name="" id="" class="max-w-[55px] sm:max-w-none">
+                            <option value="">En Düşük Fiyata Göre Sırala</option>
+                            <option value="">En Yüksek Fiyata Göre Sırala</option>
+                        </select>
+                        <select name="" id="">
+                            <option value="">Stok Durumu</option>
+                            <option value="">Stok Durumu</option>
+                        </select>
+                        <select name="" id="">
+                            <option value="">Miad</option>
+                            <option value="">Miad</option>
+                        </select>
+                    </div>
+                    <div class="category_order_buttons">
+                        <button class="list_cols"><img src="/assets/images/list-button.svg" alt=""></button>
+                        <button class="grid_cols"><img src="/assets/images/grid-button.svg" alt=""></button>
+                    </div>
+                </div>
+                <div class="category_filter">
+                    <div class="category_filter_item">
+                        <h3>KATEGORİLER</h3>
+                        <ul class="category_filter_list">
+                            <li tabindex="0" class="category_filter_list_item">
+                                <input type="checkbox" class="category_filter_list_item_input">
+                                <label class="category_filter_list_item_label" for="">BESİN DESTEK <span>2</span></label>
+                                <ul class="category_filter_list_item_sub">
+                                    <li>
+                                        <input type="checkbox" id="besindestek" class="category_filter_sub_input">
+                                        <label for="besindestek" class="category_filter_sub_label">Besin Destek</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="besindestek2" class="category_filter_sub_input">
+                                        <label for="besindestek2" class="category_filter_sub_label">Besin Destek</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="besindestek3" class="category_filter_sub_input">
+                                        <label for="besindestek3" class="category_filter_sub_label">Besin Destek</label>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li tabindex="0" class="category_filter_list_item">
+                                <input type="checkbox" class="category_filter_list_item_input">
+                                <label class="category_filter_list_item_label" for="">BESİN DESTEK <span>2</span></label>
+                                <ul class="category_filter_list_item_sub">
+                                    <li>
+                                        <input type="checkbox" id="besindestek" class="category_filter_sub_input">
+                                        <label for="besindestek" class="category_filter_sub_label">Besin Destek</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="besindestek2" class="category_filter_sub_input">
+                                        <label for="besindestek2" class="category_filter_sub_label">Besin Destek</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="besindestek3" class="category_filter_sub_input">
+                                        <label for="besindestek3" class="category_filter_sub_label">Besin Destek</label>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li tabindex="0" class="category_filter_list_item">
+                                <input type="checkbox" class="category_filter_list_item_input">
+                                <label class="category_filter_list_item_label" for="">BESİN DESTEK <span>2</span></label>
+                                <ul class="category_filter_list_item_sub">
+                                    <li>
+                                        <input type="checkbox" id="besindestek" class="category_filter_sub_input">
+                                        <label for="besindestek" class="category_filter_sub_label">Besin Destek</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="besindestek2" class="category_filter_sub_input">
+                                        <label for="besindestek2" class="category_filter_sub_label">Besin Destek</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="besindestek3" class="category_filter_sub_input">
+                                        <label for="besindestek3" class="category_filter_sub_label">Besin Destek</label>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li tabindex="0" class="category_filter_list_item">
+                                <input type="checkbox" class="category_filter_list_item_input">
+                                <label class="category_filter_list_item_label" for="">BESİN DESTEK <span>2</span></label>
+                                <ul class="category_filter_list_item_sub">
+                                    <li>
+                                        <input type="checkbox" id="besindestek" class="category_filter_sub_input">
+                                        <label for="besindestek" class="category_filter_sub_label">Besin Destek</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="besindestek2" class="category_filter_sub_input">
+                                        <label for="besindestek2" class="category_filter_sub_label">Besin Destek</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="besindestek3" class="category_filter_sub_input">
+                                        <label for="besindestek3" class="category_filter_sub_label">Besin Destek</label>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li tabindex="0" class="category_filter_list_item">
+                                <input type="checkbox" class="category_filter_list_item_input">
+                                <label class="category_filter_list_item_label" for="">BESİN DESTEK <span>2</span></label>
+                                <ul class="category_filter_list_item_sub">
+                                    <li>
+                                        <input type="checkbox" id="besindestek" class="category_filter_sub_input">
+                                        <label for="besindestek" class="category_filter_sub_label">Besin Destek</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="besindestek2" class="category_filter_sub_input">
+                                        <label for="besindestek2" class="category_filter_sub_label">Besin Destek</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="besindestek3" class="category_filter_sub_input">
+                                        <label for="besindestek3" class="category_filter_sub_label">Besin Destek</label>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="category_main_content">
+                    <div class="category_search">
+                        <p>Kategori kapsamında arama yapmak için arama çubuğuna ürün adını yazın</p>
+                            <form action="" class="category_search_content">
+                                    <div class="form_control">
+                                        <input type="text" placeholder="ürün adını buraya yazınız..">
+                                    </div>
+                                    <button>ARA</button>
+                            </form>
+                    </div>
+                    <div class="category_product_cards">
+                        <div class="product-card-top group">
+                            <div class="product-card">
+                            <a class="product-image" href=""><img loading="lazy" src="/assets/images/urun_1.png" alt=""></a>
+                            <div class="action-buttons">
+                              <ul class="action-list">
+                                <li class="action-element"><a class="action-link" href=""><i class="action-icon fas fa-heart"></i></a></li>
+                                <li class="action-element"><a class="action-link" href=""><i class="action-icon fas fa-up-right-from-square"></i></a></li>
+                                <li class="action-element"><a class="action-link" href=""><i class="action-icon fas fa-magnifying-glass-plus"></i></a></li>
+                              </ul>
+                            </div>
+                            <div class="product_card_text_content">
+                                <a href="" class="advert-count"><span >8 İLAN</span></a>
+                            <a class="product-title" href=""><h3>Deotak Invisible Roll-On Women 35 ml</h3></a>
+                            <span class="expired_date">Temmuz 2025</span>
+                            <span class="product_piece">142 Adet</span>
+                            </div>
+                              <a href="" class="price-content">
+                                <span class="old-price">20,00₺</span>
+                              <div class="new-price">
+                                <p>EN UYGUN</p>
+                                <span class="price">10,99₺</span>
+                              </div>
+                              </a>
+                            </div>                  
+                            <div class="text-extra links">
+                              <a class="text-link" href="#">İLANLARA GİT</a>
+                            </div>
+                        </div>
+                        <div class="product-card-top group">
+                            <div class="product-card">
+                            <a class="product-image" href=""><img loading="lazy" src="/assets/images/urun_1.png" alt=""></a>
+                            <div class="action-buttons">
+                              <ul class="action-list">
+                                <li class="action-element"><a class="action-link" href=""><i class="action-icon fas fa-heart"></i></a></li>
+                                <li class="action-element"><a class="action-link" href=""><i class="action-icon fas fa-up-right-from-square"></i></a></li>
+                                <li class="action-element"><a class="action-link" href=""><i class="action-icon fas fa-magnifying-glass-plus"></i></a></li>
+                              </ul>
+                            </div>
+                            <div class="product_card_text_content">
+                                <a href="" class="advert-count"><span >8 İLAN</span></a>
+                            <a class="product-title" href=""><h3>Deotak Invisible Roll-On Women 35 ml</h3></a>
+                            <span class="expired_date">Temmuz 2025</span>
+                            <span class="product_piece">142 Adet</span>
+                            </div>
+                              <a href="" class="price-content">
+                                <span class="old-price">20,00₺</span>
+                              <div class="new-price">
+                                <p>EN UYGUN</p>
+                                <span class="price">10,99₺</span>
+                              </div>
+                              </a>
+                            </div>                  
+                            <div class="text-extra links">
+                              <a class="text-link" href="#">İLANLARA GİT</a>
+                            </div>
+                        </div>
+                        <div class="product-card-top group">
+                            <div class="product-card">
+                            <a class="product-image" href=""><img loading="lazy" src="/assets/images/urun_1.png" alt=""></a>
+                            <div class="action-buttons">
+                              <ul class="action-list">
+                                <li class="action-element"><a class="action-link" href=""><i class="action-icon fas fa-heart"></i></a></li>
+                                <li class="action-element"><a class="action-link" href=""><i class="action-icon fas fa-up-right-from-square"></i></a></li>
+                                <li class="action-element"><a class="action-link" href=""><i class="action-icon fas fa-magnifying-glass-plus"></i></a></li>
+                              </ul>
+                            </div>
+                            <div class="product_card_text_content">
+                                <a href="" class="advert-count"><span >8 İLAN</span></a>
+                            <a class="product-title" href=""><h3>Deotak Invisible Roll-On Women 35 ml</h3></a>
+                            <span class="expired_date">Temmuz 2025</span>
+                            <span class="product_piece">142 Adet</span>
+                            </div>
+                              <a href="" class="price-content">
+                                <span class="old-price">20,00₺</span>
+                              <div class="new-price">
+                                <p>EN UYGUN</p>
+                                <span class="price">10,99₺</span>
+                              </div>
+                              </a>
+                            </div>                  
+                            <div class="text-extra links">
+                              <a class="text-link" href="#">İLANLARA GİT</a>
+                            </div>
+                        </div>
+                        <div class="product-card-top group">
+                            <div class="product-card">
+                            <a class="product-image" href=""><img loading="lazy" src="/assets/images/urun_1.png" alt=""></a>
+                            <div class="action-buttons">
+                              <ul class="action-list">
+                                <li class="action-element"><a class="action-link" href=""><i class="action-icon fas fa-heart"></i></a></li>
+                                <li class="action-element"><a class="action-link" href=""><i class="action-icon fas fa-up-right-from-square"></i></a></li>
+                                <li class="action-element"><a class="action-link" href=""><i class="action-icon fas fa-magnifying-glass-plus"></i></a></li>
+                              </ul>
+                            </div>
+                            <div class="product_card_text_content">
+                                <a href="" class="advert-count"><span >8 İLAN</span></a>
+                            <a class="product-title" href=""><h3>Deotak Invisible Roll-On Women 35 ml</h3></a>
+                            <span class="expired_date">Temmuz 2025</span>
+                            <span class="product_piece">142 Adet</span>
+                            </div>
+                              <a href="" class="price-content">
+                                <span class="old-price">20,00₺</span>
+                              <div class="new-price">
+                                <p>EN UYGUN</p>
+                                <span class="price">10,99₺</span>
+                              </div>
+                              </a>
+                            </div>                  
+                            <div class="text-extra links">
+                              <a class="text-link" href="#">İLANLARA GİT</a>
+                            </div>
+                        </div>
+                        <div class="product-card-top group">
+                            <div class="product-card">
+                            <a class="product-image" href=""><img loading="lazy" src="/assets/images/urun_1.png" alt=""></a>
+                            <div class="action-buttons">
+                              <ul class="action-list">
+                                <li class="action-element"><a class="action-link" href=""><i class="action-icon fas fa-heart"></i></a></li>
+                                <li class="action-element"><a class="action-link" href=""><i class="action-icon fas fa-up-right-from-square"></i></a></li>
+                                <li class="action-element"><a class="action-link" href=""><i class="action-icon fas fa-magnifying-glass-plus"></i></a></li>
+                              </ul>
+                            </div>
+                            <div class="product_card_text_content">
+                                <a href="" class="advert-count"><span >8 İLAN</span></a>
+                            <a class="product-title" href=""><h3>Deotak Invisible Roll-On Women 35 ml</h3></a>
+                            <span class="expired_date">Temmuz 2025</span>
+                            <span class="product_piece">142 Adet</span>
+                            </div>
+                              <a href="" class="price-content">
+                                <span class="old-price">20,00₺</span>
+                              <div class="new-price">
+                                <p>EN UYGUN</p>
+                                <span class="price">10,99₺</span>
+                              </div>
+                              </a>
+                            </div>                  
+                            <div class="text-extra links">
+                              <a class="text-link" href="#">İLANLARA GİT</a>
+                            </div>
+                        </div>
+                        <div class="product-card-top group">
+                            <div class="product-card">
+                            <a class="product-image" href=""><img loading="lazy" src="/assets/images/urun_1.png" alt=""></a>
+                            <div class="action-buttons">
+                              <ul class="action-list">
+                                <li class="action-element"><a class="action-link" href=""><i class="action-icon fas fa-heart"></i></a></li>
+                                <li class="action-element"><a class="action-link" href=""><i class="action-icon fas fa-up-right-from-square"></i></a></li>
+                                <li class="action-element"><a class="action-link" href=""><i class="action-icon fas fa-magnifying-glass-plus"></i></a></li>
+                              </ul>
+                            </div>
+                            <div class="product_card_text_content">
+                                <a href="" class="advert-count"><span >8 İLAN</span></a>
+                            <a class="product-title" href=""><h3>Deotak Invisible Roll-On Women 35 ml</h3></a>
+                            <span class="expired_date">Temmuz 2025</span>
+                            <span class="product_piece">142 Adet</span>
+                            </div>
+                              <a href="" class="price-content">
+                                <span class="old-price">20,00₺</span>
+                              <div class="new-price">
+                                <p>EN UYGUN</p>
+                                <span class="price">10,99₺</span>
+                              </div>
+                              </a>
+                            </div>                  
+                            <div class="text-extra links">
+                              <a class="text-link" href="#">İLANLARA GİT</a>
+                            </div>
+                        </div>
+                        <div class="product-card-top group">
+                            <div class="product-card">
+                            <a class="product-image" href=""><img loading="lazy" src="/assets/images/urun_1.png" alt=""></a>
+                            <div class="action-buttons">
+                              <ul class="action-list">
+                                <li class="action-element"><a class="action-link" href=""><i class="action-icon fas fa-heart"></i></a></li>
+                                <li class="action-element"><a class="action-link" href=""><i class="action-icon fas fa-up-right-from-square"></i></a></li>
+                                <li class="action-element"><a class="action-link" href=""><i class="action-icon fas fa-magnifying-glass-plus"></i></a></li>
+                              </ul>
+                            </div>
+                            <div class="product_card_text_content">
+                                <a href="" class="advert-count"><span >8 İLAN</span></a>
+                            <a class="product-title" href=""><h3>Deotak Invisible Roll-On Women 35 ml</h3></a>
+                            <span class="expired_date">Temmuz 2025</span>
+                            <span class="product_piece">142 Adet</span>
+                            </div>
+                              <a href="" class="price-content">
+                                <span class="old-price">20,00₺</span>
+                              <div class="new-price">
+                                <p>EN UYGUN</p>
+                                <span class="price">10,99₺</span>
+                              </div>
+                              </a>
+                            </div>                  
+                            <div class="text-extra links">
+                              <a class="text-link" href="#">İLANLARA GİT</a>
+                            </div>
+                        </div>
+                        <div class="product-card-top group">
+                            <div class="product-card">
+                            <a class="product-image" href=""><img loading="lazy" src="/assets/images/urun_1.png" alt=""></a>
+                            <div class="action-buttons">
+                              <ul class="action-list">
+                                <li class="action-element"><a class="action-link" href=""><i class="action-icon fas fa-heart"></i></a></li>
+                                <li class="action-element"><a class="action-link" href=""><i class="action-icon fas fa-up-right-from-square"></i></a></li>
+                                <li class="action-element"><a class="action-link" href=""><i class="action-icon fas fa-magnifying-glass-plus"></i></a></li>
+                              </ul>
+                            </div>
+                            <div class="product_card_text_content">
+                                <a href="" class="advert-count"><span >8 İLAN</span></a>
+                            <a class="product-title" href=""><h3>Deotak Invisible Roll-On Women 35 ml</h3></a>
+                            <span class="expired_date">Temmuz 2025</span>
+                            <span class="product_piece">142 Adet</span>
+                            </div>
+                              <a href="" class="price-content">
+                                <span class="old-price">20,00₺</span>
+                              <div class="new-price">
+                                <p>EN UYGUN</p>
+                                <span class="price">10,99₺</span>
+                              </div>
+                              </a>
+                            </div>                  
+                            <div class="text-extra links">
+                              <a class="text-link" href="#">İLANLARA GİT</a>
+                            </div>
+                        </div>
+                        <div class="product-card-top group">
+                            <div class="product-card">
+                            <a class="product-image" href=""><img loading="lazy" src="/assets/images/urun_1.png" alt=""></a>
+                            <div class="action-buttons">
+                              <ul class="action-list">
+                                <li class="action-element"><a class="action-link" href=""><i class="action-icon fas fa-heart"></i></a></li>
+                                <li class="action-element"><a class="action-link" href=""><i class="action-icon fas fa-up-right-from-square"></i></a></li>
+                                <li class="action-element"><a class="action-link" href=""><i class="action-icon fas fa-magnifying-glass-plus"></i></a></li>
+                              </ul>
+                            </div>
+                            <div class="product_card_text_content">
+                                <a href="" class="advert-count"><span >8 İLAN</span></a>
+                            <a class="product-title" href=""><h3>Deotak Invisible Roll-On Women 35 ml</h3></a>
+                            <span class="expired_date">Temmuz 2025</span>
+                            <span class="product_piece">142 Adet</span>
+                            </div>
+                              <a href="" class="price-content">
+                                <span class="old-price">20,00₺</span>
+                              <div class="new-price">
+                                <p>EN UYGUN</p>
+                                <span class="price">10,99₺</span>
+                              </div>
+                              </a>
+                            </div>                  
+                            <div class="text-extra links">
+                              <a class="text-link" href="#">İLANLARA GİT</a>
+                            </div>
+                        </div>
+                        <div class="product-card-top group">
+                            <div class="product-card">
+                            <a class="product-image" href=""><img loading="lazy" src="/assets/images/urun_1.png" alt=""></a>
+                            <div class="action-buttons">
+                              <ul class="action-list">
+                                <li class="action-element"><a class="action-link" href=""><i class="action-icon fas fa-heart"></i></a></li>
+                                <li class="action-element"><a class="action-link" href=""><i class="action-icon fas fa-up-right-from-square"></i></a></li>
+                                <li class="action-element"><a class="action-link" href=""><i class="action-icon fas fa-magnifying-glass-plus"></i></a></li>
+                              </ul>
+                            </div>
+                            <div class="product_card_text_content">
+                                <a href="" class="advert-count"><span >8 İLAN</span></a>
+                            <a class="product-title" href=""><h3>Deotak Invisible Roll-On Women 35 ml</h3></a>
+                            <span class="expired_date">Temmuz 2025</span>
+                            <span class="product_piece">142 Adet</span>
+                            </div>
+                              <a href="" class="price-content">
+                                <span class="old-price">20,00₺</span>
+                              <div class="new-price">
+                                <p>EN UYGUN</p>
+                                <span class="price">10,99₺</span>
+                              </div>
+                              </a>
+                            </div>                  
+                            <div class="text-extra links">
+                              <a class="text-link" href="#">İLANLARA GİT</a>
+                            </div>
+                        </div>
+                        <div class="product-card-top group">
+                            <div class="product-card">
+                            <a class="product-image" href=""><img loading="lazy" src="/assets/images/urun_1.png" alt=""></a>
+                            <div class="action-buttons">
+                              <ul class="action-list">
+                                <li class="action-element"><a class="action-link" href=""><i class="action-icon fas fa-heart"></i></a></li>
+                                <li class="action-element"><a class="action-link" href=""><i class="action-icon fas fa-up-right-from-square"></i></a></li>
+                                <li class="action-element"><a class="action-link" href=""><i class="action-icon fas fa-magnifying-glass-plus"></i></a></li>
+                              </ul>
+                            </div>
+                            <div class="product_card_text_content">
+                                <a href="" class="advert-count"><span >8 İLAN</span></a>
+                            <a class="product-title" href=""><h3>Deotak Invisible Roll-On Women 35 ml</h3></a>
+                            <span class="expired_date">Temmuz 2025</span>
+                            <span class="product_piece">142 Adet</span>
+                            </div>
+                              <a href="" class="price-content">
+                                <span class="old-price">20,00₺</span>
+                              <div class="new-price">
+                                <p>EN UYGUN</p>
+                                <span class="price">10,99₺</span>
+                              </div>
+                              </a>
+                            </div>                  
+                            <div class="text-extra links">
+                              <a class="text-link" href="#">İLANLARA GİT</a>
+                            </div>
+                        </div>
+                        <div class="product-card-top group">
+                            <div class="product-card">
+                            <a class="product-image" href=""><img loading="lazy" src="/assets/images/urun_1.png" alt=""></a>
+                            <div class="action-buttons">
+                              <ul class="action-list">
+                                <li class="action-element"><a class="action-link" href=""><i class="action-icon fas fa-heart"></i></a></li>
+                                <li class="action-element"><a class="action-link" href=""><i class="action-icon fas fa-up-right-from-square"></i></a></li>
+                                <li class="action-element"><a class="action-link" href=""><i class="action-icon fas fa-magnifying-glass-plus"></i></a></li>
+                              </ul>
+                            </div>
+                            <div class="product_card_text_content">
+                                <a href="" class="advert-count"><span >8 İLAN</span></a>
+                            <a class="product-title" href=""><h3>Deotak Invisible Roll-On Women 35 ml</h3></a>
+                            <span class="expired_date">Temmuz 2025</span>
+                            <span class="product_piece">142 Adet</span>
+                            </div>
+                              <a href="" class="price-content">
+                                <span class="old-price">20,00₺</span>
+                              <div class="new-price">
+                                <p>EN UYGUN</p>
+                                <span class="price">10,99₺</span>
+                              </div>
+                              </a>
+                            </div>                  
+                            <div class="text-extra links">
+                              <a class="text-link" href="#">İLANLARA GİT</a>
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="pagination">
+                        <ul class="pagination_list">
+                            <li class="pagination_item start"><a class="pagination_link" href=""></a></li>
+                            <li class="pagination_item prev"><a class="pagination_link" href=""></a></li>
+                            <li class="pagination_item"><a class="pagination_link" href="">1</a></li>
+                            <li class="pagination_item"><a class="pagination_link" href="">2</a></li>
+                            <li class="pagination_item next"><a class="pagination_link" href=""></a></li>
+                            <li class="pagination_item end"><a class="pagination_link" href=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+      </main>
+    </div>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="/assets/js/category_main_grid.js"></script>
+</html>
